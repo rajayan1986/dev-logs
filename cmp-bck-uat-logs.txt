@@ -1,0 +1,235 @@
+06:06:53.680 [main] WARN  org.springframework.boot.ImageBanner - Image banner not printable: class path resource [banner.txt] (class java.lang.IllegalStateException: 'Unable to read image banner source')
+ __  __       _           ____                    ____                      _       _         ____                  _
+ |  \/  | __ _| |__   __ _|  _ \ ___ _ __ __ _    / ___|___  _ __ ___  _ __ | | __ _(_)_ __   / ___|  ___ _ ____   _(_) ___ ___
+ | |\/| |/ _` | '_ \ / _` | |_) / _ \ '__/ _` |  | |   / _ \| '_ ` _ \| '_ \| |/ _` | | '_ \  \___ \ / _ \ '__\ \ / / |/ __/ _ \
+ | |  | | (_| | | | | (_| |  _ <  __/ | | (_| |  | |__| (_) | | | | | | |_) | | (_| | | | | |  ___) |  __/ |   \ V /| | (_|  __/
+ |_|  |_|\__,_|_| |_|\__,_|_| \_\___|_|  \__,_|   \____\___/|_| |_| |_| .__/|_|\__,_|_|_| |_| |____/ \___|_|    \_/ |_|\___\___|
+                                                                      |_|
+06:06:55.097 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:8888
+06:06:55.589 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Connect Timeout Exception on Url - http://localhost:8888. Will be trying the next url if available
+06:06:55.589 [main] WARN  o.s.c.c.c.ConfigServicePropertySourceLocator - Could not locate PropertySource: I/O error on GET request for "http://localhost:8888/maha-rera-complaint-management-service/uat": Connection refused (Connection refused); nested exception is java.net.ConnectException: Connection refused (Connection refused)
+06:06:55.591 [main] INFO  c.r.complaint.ComplaintApplication - The following profiles are active: uat
+06:07:03.587 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+06:07:03.781 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 189ms. Found 0 JDBC repository interfaces.
+06:07:04.391 [main] WARN  o.s.boot.actuate.endpoint.EndpointId - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+06:07:05.680 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=366f548a-cf68-34a0-97a2-975f7595c998
+06:07:09.693 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+06:07:09.697 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactiveLoadBalancerConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactiveLoadBalancerConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+06:07:09.782 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'deferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+06:07:11.610 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9302 (http)
+06:07:11.684 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9302"]
+06:07:11.684 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+06:07:11.685 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.36]
+06:07:12.098 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+06:07:12.098 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 16310 ms
+06:07:12.791 [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+06:07:12.791 [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+06:07:12.983 [main] INFO  c.n.config.DynamicPropertyFactory - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@163d04ff
+06:07:15.295 [main] WARN  o.s.c.s.z.ZipkinAutoConfiguration - Check result of the [RabbitMQSender{addresses=[localhost:5672], queue=zipkin}] contains an error [CheckResult{ok=false, error=java.lang.RuntimeException: Unable to establish connection to RabbitMQ server}]
+06:07:16.892 [main] DEBUG com.zaxxer.hikari.HikariConfig - Driver class com.mysql.jdbc.Driver found in Thread context class loader TomcatEmbeddedWebappClassLoader
+  context: ROOT
+  delegate: true
+----------> Parent Classloader:
+org.springframework.boot.loader.LaunchedURLClassLoader@2e0fa5d3
+
+Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.
+06:07:17.082 [main] WARN  com.zaxxer.hikari.HikariConfig - springHikariCPAutoCommitFalse - maxLifetime is less than 30000ms, setting to default 1800000ms.
+06:07:17.082 [main] DEBUG com.zaxxer.hikari.HikariConfig - springHikariCPAutoCommitFalse - configuration:
+06:07:17.084 [main] DEBUG com.zaxxer.hikari.HikariConfig - allowPoolSuspension.............false
+06:07:17.085 [main] DEBUG com.zaxxer.hikari.HikariConfig - autoCommit......................false
+06:07:17.085 [main] DEBUG com.zaxxer.hikari.HikariConfig - catalog.........................none
+06:07:17.086 [main] DEBUG com.zaxxer.hikari.HikariConfig - connectionInitSql...............none
+06:07:17.086 [main] DEBUG com.zaxxer.hikari.HikariConfig - connectionTestQuery............."SELECT 1"
+06:07:17.087 [main] DEBUG com.zaxxer.hikari.HikariConfig - connectionTimeout...............30000
+06:07:17.087 [main] DEBUG com.zaxxer.hikari.HikariConfig - dataSource......................none
+06:07:17.087 [main] DEBUG com.zaxxer.hikari.HikariConfig - dataSourceClassName.............none
+06:07:17.088 [main] DEBUG com.zaxxer.hikari.HikariConfig - dataSourceJNDI..................none
+06:07:17.089 [main] DEBUG com.zaxxer.hikari.HikariConfig - dataSourceProperties............{dataSource.cachePrepStmts=true, dataSource.useServerPrepStmts=true, password=<masked>, dataSource.prepStmtCacheSize=250, dataSource.prepStmtCacheSqlLimit=2048}
+06:07:17.089 [main] DEBUG com.zaxxer.hikari.HikariConfig - driverClassName................."com.mysql.jdbc.Driver"
+06:07:17.089 [main] DEBUG com.zaxxer.hikari.HikariConfig - exceptionOverrideClassName......none
+06:07:17.090 [main] DEBUG com.zaxxer.hikari.HikariConfig - healthCheckProperties...........{}
+06:07:17.090 [main] DEBUG com.zaxxer.hikari.HikariConfig - healthCheckRegistry.............none
+06:07:17.091 [main] DEBUG com.zaxxer.hikari.HikariConfig - idleTimeout.....................10000
+06:07:17.091 [main] DEBUG com.zaxxer.hikari.HikariConfig - initializationFailTimeout.......1
+06:07:17.092 [main] DEBUG com.zaxxer.hikari.HikariConfig - isolateInternalQueries..........false
+06:07:17.092 [main] DEBUG com.zaxxer.hikari.HikariConfig - jdbcUrl.........................jdbc:mysql://172.18.12.186:3306/complaint
+06:07:17.093 [main] DEBUG com.zaxxer.hikari.HikariConfig - leakDetectionThreshold..........0
+06:07:17.093 [main] DEBUG com.zaxxer.hikari.HikariConfig - maxLifetime.....................1800000
+06:07:17.093 [main] DEBUG com.zaxxer.hikari.HikariConfig - maximumPoolSize.................6
+06:07:17.094 [main] DEBUG com.zaxxer.hikari.HikariConfig - metricRegistry..................none
+06:07:17.094 [main] DEBUG com.zaxxer.hikari.HikariConfig - metricsTrackerFactory...........none
+06:07:17.094 [main] DEBUG com.zaxxer.hikari.HikariConfig - minimumIdle.....................2
+06:07:17.095 [main] DEBUG com.zaxxer.hikari.HikariConfig - password........................<masked>
+06:07:17.095 [main] DEBUG com.zaxxer.hikari.HikariConfig - poolName........................"springHikariCPAutoCommitFalse"
+06:07:17.096 [main] DEBUG com.zaxxer.hikari.HikariConfig - readOnly........................false
+06:07:17.096 [main] DEBUG com.zaxxer.hikari.HikariConfig - registerMbeans..................false
+06:07:17.096 [main] DEBUG com.zaxxer.hikari.HikariConfig - scheduledExecutor...............none
+06:07:17.097 [main] DEBUG com.zaxxer.hikari.HikariConfig - schema..........................none
+06:07:17.097 [main] DEBUG com.zaxxer.hikari.HikariConfig - threadFactory...................internal
+06:07:17.180 [main] DEBUG com.zaxxer.hikari.HikariConfig - transactionIsolation............default
+06:07:17.180 [main] DEBUG com.zaxxer.hikari.HikariConfig - username........................"admin1"
+06:07:17.181 [main] DEBUG com.zaxxer.hikari.HikariConfig - validationTimeout...............5000
+06:07:17.182 [main] INFO  com.zaxxer.hikari.HikariDataSource - springHikariCPAutoCommitFalse - Starting...
+06:07:17.188 [main] WARN  c.z.hikari.util.DriverDataSource - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+06:07:17.189 [main] DEBUG c.z.hikari.util.DriverDataSource - Driver class com.mysql.jdbc.Driver found in Thread context class loader TomcatEmbeddedWebappClassLoader
+  context: ROOT
+  delegate: true
+----------> Parent Classloader:
+org.springframework.boot.loader.LaunchedURLClassLoader@2e0fa5d3
+
+06:07:18.989 [main] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Added connection com.mysql.cj.jdbc.ConnectionImpl@aec50a1
+06:07:18.991 [main] INFO  com.zaxxer.hikari.HikariDataSource - springHikariCPAutoCommitFalse - Start completed.
+Datasource Created Sucessfully...
+06:07:19.095 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Before cleanup stats (total=1, active=0, idle=1, waiting=0)
+06:07:19.097 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - After cleanup  stats (total=1, active=0, idle=1, waiting=0)
+06:07:19.290 [main] DEBUG com.zaxxer.hikari.HikariConfig - Driver class com.mysql.jdbc.Driver found in Thread context class loader TomcatEmbeddedWebappClassLoader
+  context: ROOT
+  delegate: true
+----------> Parent Classloader:
+org.springframework.boot.loader.LaunchedURLClassLoader@2e0fa5d3
+
+06:07:19.290 [main] WARN  com.zaxxer.hikari.HikariConfig - springHikariCPAutoCommitTrue - maxLifetime is less than 30000ms, setting to default 1800000ms.
+06:07:19.291 [main] DEBUG com.zaxxer.hikari.HikariConfig - springHikariCPAutoCommitTrue - configuration:
+06:07:19.292 [main] DEBUG com.zaxxer.hikari.HikariConfig - allowPoolSuspension.............false
+06:07:19.292 [main] DEBUG com.zaxxer.hikari.HikariConfig - autoCommit......................true
+06:07:19.293 [main] DEBUG com.zaxxer.hikari.HikariConfig - catalog.........................none
+06:07:19.293 [main] DEBUG com.zaxxer.hikari.HikariConfig - connectionInitSql...............none
+06:07:19.293 [main] DEBUG com.zaxxer.hikari.HikariConfig - connectionTestQuery............."SELECT 1"
+06:07:19.380 [main] DEBUG com.zaxxer.hikari.HikariConfig - connectionTimeout...............30000
+06:07:19.380 [main] DEBUG com.zaxxer.hikari.HikariConfig - dataSource......................none
+06:07:19.381 [main] DEBUG com.zaxxer.hikari.HikariConfig - dataSourceClassName.............none
+06:07:19.381 [main] DEBUG com.zaxxer.hikari.HikariConfig - dataSourceJNDI..................none
+06:07:19.382 [main] DEBUG com.zaxxer.hikari.HikariConfig - dataSourceProperties............{dataSource.cachePrepStmts=true, dataSource.useServerPrepStmts=true, password=<masked>, dataSource.prepStmtCacheSize=250, dataSource.prepStmtCacheSqlLimit=2048}
+06:07:19.382 [main] DEBUG com.zaxxer.hikari.HikariConfig - driverClassName................."com.mysql.jdbc.Driver"
+06:07:19.383 [main] DEBUG com.zaxxer.hikari.HikariConfig - exceptionOverrideClassName......none
+06:07:19.383 [main] DEBUG com.zaxxer.hikari.HikariConfig - healthCheckProperties...........{}
+06:07:19.383 [springHikariCPAutoCommitFalse connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Added connection com.mysql.cj.jdbc.ConnectionImpl@1143060f
+06:07:19.383 [springHikariCPAutoCommitFalse connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - After adding stats (total=2, active=0, idle=2, waiting=0)
+06:07:19.384 [main] DEBUG com.zaxxer.hikari.HikariConfig - healthCheckRegistry.............none
+06:07:19.384 [main] DEBUG com.zaxxer.hikari.HikariConfig - idleTimeout.....................10000
+06:07:19.384 [main] DEBUG com.zaxxer.hikari.HikariConfig - initializationFailTimeout.......1
+06:07:19.384 [main] DEBUG com.zaxxer.hikari.HikariConfig - isolateInternalQueries..........false
+06:07:19.385 [main] DEBUG com.zaxxer.hikari.HikariConfig - jdbcUrl.........................jdbc:mysql://172.18.12.186:3306/complaint
+06:07:19.385 [main] DEBUG com.zaxxer.hikari.HikariConfig - leakDetectionThreshold..........0
+06:07:19.386 [main] DEBUG com.zaxxer.hikari.HikariConfig - maxLifetime.....................1800000
+06:07:19.386 [main] DEBUG com.zaxxer.hikari.HikariConfig - maximumPoolSize.................6
+06:07:19.386 [main] DEBUG com.zaxxer.hikari.HikariConfig - metricRegistry..................none
+06:07:19.387 [main] DEBUG com.zaxxer.hikari.HikariConfig - metricsTrackerFactory...........none
+06:07:19.387 [main] DEBUG com.zaxxer.hikari.HikariConfig - minimumIdle.....................2
+06:07:19.388 [main] DEBUG com.zaxxer.hikari.HikariConfig - password........................<masked>
+06:07:19.388 [main] DEBUG com.zaxxer.hikari.HikariConfig - poolName........................"springHikariCPAutoCommitTrue"
+06:07:19.389 [main] DEBUG com.zaxxer.hikari.HikariConfig - readOnly........................false
+06:07:19.389 [main] DEBUG com.zaxxer.hikari.HikariConfig - registerMbeans..................false
+06:07:19.390 [main] DEBUG com.zaxxer.hikari.HikariConfig - scheduledExecutor...............none
+06:07:19.390 [main] DEBUG com.zaxxer.hikari.HikariConfig - schema..........................none
+06:07:19.390 [main] DEBUG com.zaxxer.hikari.HikariConfig - threadFactory...................internal
+06:07:19.391 [main] DEBUG com.zaxxer.hikari.HikariConfig - transactionIsolation............default
+06:07:19.391 [main] DEBUG com.zaxxer.hikari.HikariConfig - username........................"admin1"
+06:07:19.392 [main] DEBUG com.zaxxer.hikari.HikariConfig - validationTimeout...............5000
+06:07:19.392 [main] INFO  com.zaxxer.hikari.HikariDataSource - springHikariCPAutoCommitTrue - Starting...
+06:07:19.480 [main] WARN  c.z.hikari.util.DriverDataSource - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+06:07:19.480 [main] DEBUG c.z.hikari.util.DriverDataSource - Driver class com.mysql.jdbc.Driver found in Thread context class loader TomcatEmbeddedWebappClassLoader
+  context: ROOT
+  delegate: true
+----------> Parent Classloader:
+org.springframework.boot.loader.LaunchedURLClassLoader@2e0fa5d3
+
+06:07:19.580 [main] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Added connection com.mysql.cj.jdbc.ConnectionImpl@408b35bf
+06:07:19.581 [main] INFO  com.zaxxer.hikari.HikariDataSource - springHikariCPAutoCommitTrue - Start completed.
+Datasource Created Sucessfully...
+06:07:19.681 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Before cleanup stats (total=1, active=0, idle=1, waiting=0)
+06:07:19.681 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - After cleanup  stats (total=1, active=0, idle=1, waiting=0)
+06:07:19.789 [springHikariCPAutoCommitTrue connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Added connection com.mysql.cj.jdbc.ConnectionImpl@50e4eb8d
+06:07:19.789 [springHikariCPAutoCommitTrue connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - After adding stats (total=2, active=0, idle=2, waiting=0)
+06:07:22.491 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'complaintController': Unsatisfied dependency expressed through field 'complaintService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'complaintServiceImpl': Unsatisfied dependency expressed through field 'integrationApiService'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'integrationApiServiceImpl': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'integration.sendEmail' in value "${integration.sendEmail}"
+06:07:22.492 [main] INFO  com.zaxxer.hikari.HikariDataSource - springHikariCPAutoCommitTrue - Shutdown initiated...
+06:07:22.492 [main] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Before shutdown stats (total=2, active=0, idle=2, waiting=0)
+06:07:22.493 [springHikariCPAutoCommitTrue connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - springHikariCPAutoCommitTrue - Closing connection com.mysql.cj.jdbc.ConnectionImpl@408b35bf: (connection evicted)
+06:07:22.496 [springHikariCPAutoCommitTrue connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - springHikariCPAutoCommitTrue - Closing connection com.mysql.cj.jdbc.ConnectionImpl@50e4eb8d: (connection evicted)
+06:07:22.580 [main] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - After shutdown stats (total=0, active=0, idle=0, waiting=0)
+06:07:22.581 [main] INFO  com.zaxxer.hikari.HikariDataSource - springHikariCPAutoCommitTrue - Shutdown completed.
+06:07:22.581 [main] INFO  com.zaxxer.hikari.HikariDataSource - springHikariCPAutoCommitFalse - Shutdown initiated...
+06:07:22.581 [main] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Before shutdown stats (total=2, active=0, idle=2, waiting=0)
+06:07:22.581 [springHikariCPAutoCommitFalse connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - springHikariCPAutoCommitFalse - Closing connection com.mysql.cj.jdbc.ConnectionImpl@aec50a1: (connection evicted)
+06:07:22.584 [springHikariCPAutoCommitFalse connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - springHikariCPAutoCommitFalse - Closing connection com.mysql.cj.jdbc.ConnectionImpl@1143060f: (connection evicted)
+06:07:22.586 [main] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - After shutdown stats (total=0, active=0, idle=0, waiting=0)
+06:07:22.586 [main] INFO  com.zaxxer.hikari.HikariDataSource - springHikariCPAutoCommitFalse - Shutdown completed.
+06:07:23.595 [main] WARN  z.r.AsyncReporter$BoundedAsyncReporter - Timed out waiting for in-flight spans to send
+06:07:23.598 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+06:07:23.687 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+06:07:23.697 [main] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'complaintController': Unsatisfied dependency expressed through field 'complaintService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'complaintServiceImpl': Unsatisfied dependency expressed through field 'integrationApiService'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'integrationApiServiceImpl': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'integration.sendEmail' in value "${integration.sendEmail}"
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:643)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:130)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1422)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:893)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.rera.complaint.ComplaintApplication.main(ComplaintApplication.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:49)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:109)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:58)
+	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:88)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'complaintServiceImpl': Unsatisfied dependency expressed through field 'integrationApiService'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'integrationApiServiceImpl': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'integration.sendEmail' in value "${integration.sendEmail}"
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:643)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:130)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1422)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1304)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1224)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	... 28 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'integrationApiServiceImpl': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'integration.sendEmail' in value "${integration.sendEmail}"
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:405)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1422)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1304)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1224)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	... 41 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'integration.sendEmail' in value "${integration.sendEmail}"
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:178)
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:124)
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:239)
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:210)
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.lambda$processProperties$0(PropertySourcesPlaceholderConfigurer.java:175)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:912)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1245)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1224)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:130)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	... 52 common frames omitted
