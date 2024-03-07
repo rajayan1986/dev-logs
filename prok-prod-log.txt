@@ -1,0 +1,884 @@
+Oracle APM Agent: Starting APM Agent [premain]
+Oracle APM Agent: Wrapper: version, hybrid
+Oracle APM Agent: [DirectoryLocation] initialized on classloader [null]
+Oracle APM - temp log directory is /tmp/
+Oracle APM Agent: Parsing instrumentation directives
+Oracle APM Agent: Loading directives from [built-in.directives]
+Oracle APM Agent: Loading directives from [/apmprod-fss/oracle-apm-agent/config/1.11.1.4/DirectivesConfig.acml]
+Oracle APM Agent: Parsed a total of [199] directives
+Oracle APM Agent: Initializing AgentInstance
+Oracle APM Agent: Initialized AgentInstance
+Oracle APM Agent: Started [premain] Agent
+07:44:17.588 [main] WARN  org.springframework.boot.ImageBanner - Image banner not printable: class path resource [banner.txt] (class java.lang.IllegalStateException: 'Unable to read image banner source')
+  __  __       _           ____                   ____            _           _      ____                  _          
+ |  \/  | __ _| |__   __ _|  _ \ ___ _ __ __ _   |  _ \ _ __ ___ (_) ___  ___| |_   / ___|  ___ _ ____   _(_) ___ ___ 
+ | |\/| |/ _` | '_ \ / _` | |_) / _ \ '__/ _` |  | |_) | '__/ _ \| |/ _ \/ __| __|  \___ \ / _ \ '__\ \ / / |/ __/ _ \
+ | |  | | (_| | | | | (_| |  _ <  __/ | | (_| |  |  __/| | | (_) | |  __/ (__| |_    ___) |  __/ |   \ V /| | (_|  __/
+ |_|  |_|\__,_|_| |_|\__,_|_| \_\___|_|  \__,_|  |_|   |_|  \___// |\___|\___|\__|  |____/ \___|_|    \_/ |_|\___\___|
+                                                               |__/                                                   
+07:44:19.782 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:8888
+07:44:20.376 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Connect Timeout Exception on Url - http://localhost:8888. Will be trying the next url if available
+07:44:20.377 [main] WARN  o.s.c.c.c.ConfigServicePropertySourceLocator - Could not locate PropertySource: I/O error on GET request for "http://localhost:8888/maha-rera-project-registration-service/prod": Connection refused (Connection refused); nested exception is java.net.ConnectException: Connection refused (Connection refused)
+07:44:20.382 [main] INFO  c.r.p.ProjectRegistrationApplication - The following profiles are active: prod
+07:44:26.335 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+07:44:26.483 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 135ms. Found 0 JDBC repository interfaces.
+07:44:26.905 [main] WARN  o.s.boot.actuate.endpoint.EndpointId - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+07:44:27.991 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=71bc5f09-db84-3c58-a19a-65ac743e924f
+07:44:33.784 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9294 (http)
+07:44:33.810 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9294"]
+07:44:33.811 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+07:44:33.811 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.36]
+07:44:34.087 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+07:44:34.087 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 13563 ms
+07:44:34.411 [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+07:44:34.412 [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+07:44:34.591 [main] INFO  c.n.config.DynamicPropertyFactory - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@40d22a60
+07:44:35.605 [main] WARN  o.s.c.s.z.ZipkinAutoConfiguration - Check result of the [RabbitMQSender{addresses=[rabbitmqcluster-dev:5672], queue=zipkin}] contains an error [CheckResult{ok=false, error=java.lang.RuntimeException: Unable to establish connection to RabbitMQ server}]
+07:44:36.405 [main] DEBUG com.zaxxer.hikari.HikariConfig - Driver class com.mysql.jdbc.Driver found in Thread context class loader TomcatEmbeddedWebappClassLoader
+  context: ROOT
+  delegate: true
+----------> Parent Classloader:
+org.springframework.boot.loader.LaunchedURLClassLoader@7bedc48a
+
+Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.
+07:44:36.494 [main] WARN  com.zaxxer.hikari.HikariConfig - springHikariCPAutoCommitFalse - maxLifetime is less than 30000ms, setting to default 1800000ms.
+07:44:36.494 [main] DEBUG com.zaxxer.hikari.HikariConfig - springHikariCPAutoCommitFalse - configuration:
+07:44:36.497 [main] DEBUG com.zaxxer.hikari.HikariConfig - allowPoolSuspension.............false
+07:44:36.497 [main] DEBUG com.zaxxer.hikari.HikariConfig - autoCommit......................false
+07:44:36.497 [main] DEBUG com.zaxxer.hikari.HikariConfig - catalog.........................none
+07:44:36.498 [main] DEBUG com.zaxxer.hikari.HikariConfig - connectionInitSql...............none
+07:44:36.498 [main] DEBUG com.zaxxer.hikari.HikariConfig - connectionTestQuery............."SELECT 1"
+07:44:36.498 [main] DEBUG com.zaxxer.hikari.HikariConfig - connectionTimeout...............30000
+07:44:36.498 [main] DEBUG com.zaxxer.hikari.HikariConfig - dataSource......................none
+07:44:36.499 [main] DEBUG com.zaxxer.hikari.HikariConfig - dataSourceClassName.............none
+07:44:36.499 [main] DEBUG com.zaxxer.hikari.HikariConfig - dataSourceJNDI..................none
+07:44:36.500 [main] DEBUG com.zaxxer.hikari.HikariConfig - dataSourceProperties............{dataSource.cachePrepStmts=true, dataSource.useServerPrepStmts=true, password=<masked>, dataSource.prepStmtCacheSize=250, dataSource.prepStmtCacheSqlLimit=2048}
+07:44:36.500 [main] DEBUG com.zaxxer.hikari.HikariConfig - driverClassName................."com.mysql.jdbc.Driver"
+07:44:36.500 [main] DEBUG com.zaxxer.hikari.HikariConfig - exceptionOverrideClassName......none
+07:44:36.501 [main] DEBUG com.zaxxer.hikari.HikariConfig - healthCheckProperties...........{}
+07:44:36.501 [main] DEBUG com.zaxxer.hikari.HikariConfig - healthCheckRegistry.............none
+07:44:36.501 [main] DEBUG com.zaxxer.hikari.HikariConfig - idleTimeout.....................10000
+07:44:36.501 [main] DEBUG com.zaxxer.hikari.HikariConfig - initializationFailTimeout.......1
+07:44:36.502 [main] DEBUG com.zaxxer.hikari.HikariConfig - isolateInternalQueries..........false
+07:44:36.502 [main] DEBUG com.zaxxer.hikari.HikariConfig - jdbcUrl.........................jdbc:mysql://172.18.14.168:3306/project
+07:44:36.502 [main] DEBUG com.zaxxer.hikari.HikariConfig - leakDetectionThreshold..........0
+07:44:36.503 [main] DEBUG com.zaxxer.hikari.HikariConfig - maxLifetime.....................1800000
+07:44:36.503 [main] DEBUG com.zaxxer.hikari.HikariConfig - maximumPoolSize.................10
+07:44:36.503 [main] DEBUG com.zaxxer.hikari.HikariConfig - metricRegistry..................none
+07:44:36.503 [main] DEBUG com.zaxxer.hikari.HikariConfig - metricsTrackerFactory...........none
+07:44:36.504 [main] DEBUG com.zaxxer.hikari.HikariConfig - minimumIdle.....................2
+07:44:36.504 [main] DEBUG com.zaxxer.hikari.HikariConfig - password........................<masked>
+07:44:36.504 [main] DEBUG com.zaxxer.hikari.HikariConfig - poolName........................"springHikariCPAutoCommitFalse"
+07:44:36.505 [main] DEBUG com.zaxxer.hikari.HikariConfig - readOnly........................false
+07:44:36.505 [main] DEBUG com.zaxxer.hikari.HikariConfig - registerMbeans..................false
+07:44:36.505 [main] DEBUG com.zaxxer.hikari.HikariConfig - scheduledExecutor...............none
+07:44:36.506 [main] DEBUG com.zaxxer.hikari.HikariConfig - schema..........................none
+07:44:36.506 [main] DEBUG com.zaxxer.hikari.HikariConfig - threadFactory...................internal
+07:44:36.506 [main] DEBUG com.zaxxer.hikari.HikariConfig - transactionIsolation............default
+07:44:36.506 [main] DEBUG com.zaxxer.hikari.HikariConfig - username........................"admin1"
+07:44:36.507 [main] DEBUG com.zaxxer.hikari.HikariConfig - validationTimeout...............5000
+07:44:36.508 [main] INFO  com.zaxxer.hikari.HikariDataSource - springHikariCPAutoCommitFalse - Starting...
+07:44:36.578 [main] WARN  c.z.hikari.util.DriverDataSource - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+07:44:36.579 [main] DEBUG c.z.hikari.util.DriverDataSource - Driver class com.mysql.jdbc.Driver found in Thread context class loader TomcatEmbeddedWebappClassLoader
+  context: ROOT
+  delegate: true
+----------> Parent Classloader:
+org.springframework.boot.loader.LaunchedURLClassLoader@7bedc48a
+
+07:44:37.777 [main] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Added connection com.mysql.cj.jdbc.ConnectionImpl@303fe95c
+07:44:37.780 [main] INFO  com.zaxxer.hikari.HikariDataSource - springHikariCPAutoCommitFalse - Start completed.
+Datasource Created Sucessfully...
+07:44:37.816 [main] DEBUG com.zaxxer.hikari.HikariConfig - Driver class com.mysql.jdbc.Driver found in Thread context class loader TomcatEmbeddedWebappClassLoader
+  context: ROOT
+  delegate: true
+----------> Parent Classloader:
+org.springframework.boot.loader.LaunchedURLClassLoader@7bedc48a
+
+07:44:37.816 [main] WARN  com.zaxxer.hikari.HikariConfig - springHikariCPAutoCommitTrue - maxLifetime is less than 30000ms, setting to default 1800000ms.
+07:44:37.816 [main] DEBUG com.zaxxer.hikari.HikariConfig - springHikariCPAutoCommitTrue - configuration:
+07:44:37.817 [main] DEBUG com.zaxxer.hikari.HikariConfig - allowPoolSuspension.............false
+07:44:37.817 [main] DEBUG com.zaxxer.hikari.HikariConfig - autoCommit......................true
+07:44:37.818 [main] DEBUG com.zaxxer.hikari.HikariConfig - catalog.........................none
+07:44:37.818 [main] DEBUG com.zaxxer.hikari.HikariConfig - connectionInitSql...............none
+07:44:37.818 [main] DEBUG com.zaxxer.hikari.HikariConfig - connectionTestQuery............."SELECT 1"
+07:44:37.818 [main] DEBUG com.zaxxer.hikari.HikariConfig - connectionTimeout...............30000
+07:44:37.819 [main] DEBUG com.zaxxer.hikari.HikariConfig - dataSource......................none
+07:44:37.819 [main] DEBUG com.zaxxer.hikari.HikariConfig - dataSourceClassName.............none
+07:44:37.819 [main] DEBUG com.zaxxer.hikari.HikariConfig - dataSourceJNDI..................none
+07:44:37.820 [main] DEBUG com.zaxxer.hikari.HikariConfig - dataSourceProperties............{dataSource.cachePrepStmts=true, dataSource.useServerPrepStmts=true, password=<masked>, dataSource.prepStmtCacheSize=250, dataSource.prepStmtCacheSqlLimit=2048}
+07:44:37.820 [main] DEBUG com.zaxxer.hikari.HikariConfig - driverClassName................."com.mysql.jdbc.Driver"
+07:44:37.820 [main] DEBUG com.zaxxer.hikari.HikariConfig - exceptionOverrideClassName......none
+07:44:37.820 [main] DEBUG com.zaxxer.hikari.HikariConfig - healthCheckProperties...........{}
+07:44:37.821 [main] DEBUG com.zaxxer.hikari.HikariConfig - healthCheckRegistry.............none
+07:44:37.821 [main] DEBUG com.zaxxer.hikari.HikariConfig - idleTimeout.....................10000
+07:44:37.821 [main] DEBUG com.zaxxer.hikari.HikariConfig - initializationFailTimeout.......1
+07:44:37.822 [main] DEBUG com.zaxxer.hikari.HikariConfig - isolateInternalQueries..........false
+07:44:37.822 [main] DEBUG com.zaxxer.hikari.HikariConfig - jdbcUrl.........................jdbc:mysql://172.18.14.168:3306/project
+07:44:37.822 [main] DEBUG com.zaxxer.hikari.HikariConfig - leakDetectionThreshold..........0
+07:44:37.823 [main] DEBUG com.zaxxer.hikari.HikariConfig - maxLifetime.....................1800000
+07:44:37.823 [main] DEBUG com.zaxxer.hikari.HikariConfig - maximumPoolSize.................10
+07:44:37.823 [main] DEBUG com.zaxxer.hikari.HikariConfig - metricRegistry..................none
+07:44:37.823 [main] DEBUG com.zaxxer.hikari.HikariConfig - metricsTrackerFactory...........none
+07:44:37.824 [main] DEBUG com.zaxxer.hikari.HikariConfig - minimumIdle.....................2
+07:44:37.824 [main] DEBUG com.zaxxer.hikari.HikariConfig - password........................<masked>
+07:44:37.824 [main] DEBUG com.zaxxer.hikari.HikariConfig - poolName........................"springHikariCPAutoCommitTrue"
+07:44:37.877 [main] DEBUG com.zaxxer.hikari.HikariConfig - readOnly........................false
+07:44:37.877 [main] DEBUG com.zaxxer.hikari.HikariConfig - registerMbeans..................false
+07:44:37.877 [main] DEBUG com.zaxxer.hikari.HikariConfig - scheduledExecutor...............none
+07:44:37.878 [main] DEBUG com.zaxxer.hikari.HikariConfig - schema..........................none
+07:44:37.878 [main] DEBUG com.zaxxer.hikari.HikariConfig - threadFactory...................internal
+07:44:37.878 [main] DEBUG com.zaxxer.hikari.HikariConfig - transactionIsolation............default
+07:44:37.879 [main] DEBUG com.zaxxer.hikari.HikariConfig - username........................"admin1"
+07:44:37.879 [main] DEBUG com.zaxxer.hikari.HikariConfig - validationTimeout...............5000
+07:44:37.879 [main] INFO  com.zaxxer.hikari.HikariDataSource - springHikariCPAutoCommitTrue - Starting...
+07:44:37.880 [main] WARN  c.z.hikari.util.DriverDataSource - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+07:44:37.880 [main] DEBUG c.z.hikari.util.DriverDataSource - Driver class com.mysql.jdbc.Driver found in Thread context class loader TomcatEmbeddedWebappClassLoader
+  context: ROOT
+  delegate: true
+----------> Parent Classloader:
+org.springframework.boot.loader.LaunchedURLClassLoader@7bedc48a
+
+07:44:37.880 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Before cleanup stats (total=1, active=0, idle=1, waiting=0)
+07:44:37.882 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - After cleanup  stats (total=1, active=0, idle=1, waiting=0)
+07:44:37.905 [main] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Added connection com.mysql.cj.jdbc.ConnectionImpl@7d59e8d4
+07:44:37.906 [main] INFO  com.zaxxer.hikari.HikariDataSource - springHikariCPAutoCommitTrue - Start completed.
+Datasource Created Sucessfully...
+07:44:37.978 [springHikariCPAutoCommitFalse connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Added connection com.mysql.cj.jdbc.ConnectionImpl@3fc447cf
+07:44:37.978 [springHikariCPAutoCommitFalse connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - After adding stats (total=2, active=0, idle=2, waiting=0)
+07:44:38.006 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Before cleanup stats (total=1, active=0, idle=1, waiting=0)
+07:44:38.006 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - After cleanup  stats (total=1, active=0, idle=1, waiting=0)
+07:44:38.077 [springHikariCPAutoCommitTrue connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Added connection com.mysql.cj.jdbc.ConnectionImpl@3ff6906b
+07:44:38.078 [springHikariCPAutoCommitTrue connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - After adding stats (total=2, active=0, idle=2, waiting=0)
+07:44:42.096 [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+07:44:42.097 [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+07:44:42.607 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+07:44:44.592 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+07:44:49.182 [main] DEBUG c.zaxxer.hikari.pool.ProxyConnection - springHikariCPAutoCommitFalse - Executed rollback on connection com.mysql.cj.jdbc.ConnectionImpl@303fe95c due to dirty commit state on close().
+07:44:49.486 [main] WARN  o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger - You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+07:44:49.983 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+07:44:50.288 [main] INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+07:44:50.459 [main] INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+07:44:50.687 [main] INFO  c.n.d.p.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+07:44:50.688 [main] INFO  c.n.d.p.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+07:44:51.429 [main] INFO  c.n.d.p.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+07:44:51.429 [main] INFO  c.n.d.p.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+07:44:51.908 [main] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+07:44:52.024 [main] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+07:44:52.025 [main] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+07:44:52.025 [main] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+07:44:52.025 [main] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+07:44:52.025 [main] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+07:44:52.025 [main] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+07:44:52.026 [main] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+07:44:52.991 [main] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+07:44:52.999 [main] INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+07:44:53.002 [main] INFO  c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+07:44:53.006 [main] INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1709797493005 with initial instances count: 17
+07:44:53.011 [main] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application MAHA-RERA-PROJECT-REGISTRATION-SERVICE with eureka with status UP
+07:44:53.011 [main] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1709797493011, current=UP, previous=STARTING]
+07:44:53.013 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9294"]
+07:44:53.015 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_MAHA-RERA-PROJECT-REGISTRATION-SERVICE/backend-project-prod:maha-rera-project-registration-service:9294: registering service...
+07:44:53.101 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9294 (http) with context path ''
+07:44:53.102 [main] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 9294
+07:44:53.191 [main] INFO  c.r.p.ProjectRegistrationApplication - Started ProjectRegistrationApplication in 40.112 seconds (JVM running for 51.055)
+07:44:53.209 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_MAHA-RERA-PROJECT-REGISTRATION-SERVICE/backend-project-prod:maha-rera-project-registration-service:9294 - registration status: 204
+07:45:07.883 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+07:45:07.883 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+07:45:07.883 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Fill pool skipped, pool is at sufficient level.
+07:45:08.007 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+07:45:08.007 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+07:45:08.007 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Fill pool skipped, pool is at sufficient level.
+07:45:37.884 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+07:45:37.885 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+07:45:37.885 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Fill pool skipped, pool is at sufficient level.
+07:45:38.008 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+07:45:38.008 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+07:45:38.008 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Fill pool skipped, pool is at sufficient level.
+07:46:07.885 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+07:46:07.886 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+07:46:07.886 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Fill pool skipped, pool is at sufficient level.
+07:46:08.009 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+07:46:08.009 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+07:46:08.009 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Fill pool skipped, pool is at sufficient level.
+07:46:37.887 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+07:46:37.888 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+07:46:37.888 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Fill pool skipped, pool is at sufficient level.
+07:46:38.010 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+07:46:38.010 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+07:46:38.010 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Fill pool skipped, pool is at sufficient level.
+07:47:07.888 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+07:47:07.889 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+07:47:07.889 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Fill pool skipped, pool is at sufficient level.
+07:47:08.010 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+07:47:08.011 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+07:47:08.011 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Fill pool skipped, pool is at sufficient level.
+07:47:37.889 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+07:47:37.890 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+07:47:37.890 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Fill pool skipped, pool is at sufficient level.
+07:47:38.011 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+07:47:38.012 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+07:47:38.012 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Fill pool skipped, pool is at sufficient level.
+07:48:07.891 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+07:48:07.892 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+07:48:07.892 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Fill pool skipped, pool is at sufficient level.
+07:48:08.012 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+07:48:08.013 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+07:48:08.013 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Fill pool skipped, pool is at sufficient level.
+07:48:37.892 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+07:48:37.893 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+07:48:37.893 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Fill pool skipped, pool is at sufficient level.
+07:48:38.013 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+07:48:38.014 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+07:48:38.014 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Fill pool skipped, pool is at sufficient level.
+07:49:07.893 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+07:49:07.895 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+07:49:07.895 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Fill pool skipped, pool is at sufficient level.
+07:49:08.014 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+07:49:08.015 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+07:49:08.015 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Fill pool skipped, pool is at sufficient level.
+07:49:37.895 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+07:49:37.896 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+07:49:37.896 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Fill pool skipped, pool is at sufficient level.
+07:49:38.015 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+07:49:38.015 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+07:49:38.016 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Fill pool skipped, pool is at sufficient level.
+07:49:52.028 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+07:50:07.897 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+07:50:07.898 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+07:50:07.898 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Fill pool skipped, pool is at sufficient level.
+07:50:08.016 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+07:50:08.016 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+07:50:08.016 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Fill pool skipped, pool is at sufficient level.
+07:50:37.898 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+07:50:37.899 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+07:50:37.899 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Fill pool skipped, pool is at sufficient level.
+07:50:38.017 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+07:50:38.017 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+07:50:38.017 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Fill pool skipped, pool is at sufficient level.
+07:51:07.899 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+07:51:07.900 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+07:51:07.900 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Fill pool skipped, pool is at sufficient level.
+07:51:08.017 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+07:51:08.018 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+07:51:08.018 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Fill pool skipped, pool is at sufficient level.
+07:51:37.901 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+07:51:37.901 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+07:51:37.901 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Fill pool skipped, pool is at sufficient level.
+07:51:38.018 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+07:51:38.019 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+07:51:38.019 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Fill pool skipped, pool is at sufficient level.
+07:52:07.902 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+07:52:07.902 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+07:52:07.903 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Fill pool skipped, pool is at sufficient level.
+07:52:08.019 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+07:52:08.020 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+07:52:08.020 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Fill pool skipped, pool is at sufficient level.
+07:52:37.903 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+07:52:37.904 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+07:52:37.904 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Fill pool skipped, pool is at sufficient level.
+07:52:38.020 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+07:52:38.020 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+07:52:38.020 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Fill pool skipped, pool is at sufficient level.
+07:53:07.904 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+07:53:07.905 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+07:53:07.905 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Fill pool skipped, pool is at sufficient level.
+07:53:08.021 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+07:53:08.021 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+07:53:08.021 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Fill pool skipped, pool is at sufficient level.
+Oracle APM - log directory is /apmprod-fss/oracle-apm-agent/log/backend-project-prod_UnresolvedVariable
+Oracle APM - Usable Space: 8796093020679 MB
+Oracle APM - Failed opening the log file [/apmprod-fss/oracle-apm-agent/log/backend-project-prod_UnresolvedVariable/AgentErrors.log]
+java.io.FileNotFoundException: /apmprod-fss/oracle-apm-agent/log/backend-project-prod_UnresolvedVariable/AgentErrors.log.lck (Permission denied)
+	at java.io.RandomAccessFile.open0(Native Method)
+	at java.io.RandomAccessFile.open(RandomAccessFile.java:316)
+	at java.io.RandomAccessFile.<init>(RandomAccessFile.java:243)
+	at com.oracle.apm.agent.utility.logging.FilePublisher.getExclusiveLogFileAccess(FilePublisher.java:139)
+	at com.oracle.apm.agent.utility.logging.FilePublisher.openFile(FilePublisher.java:94)
+	at com.oracle.apm.agent.utility.logging.FilePublisher.open(FilePublisher.java:82)
+	at com.oracle.apm.agent.utility.logging.FilePublisher.<init>(FilePublisher.java:69)
+	at com.oracle.apm.agent.utility.logging.FileLoggerManager.initializeLogDirectory(FileLoggerManager.java:111)
+	at com.oracle.apm.agent.utility.logging.Logger.initializeLogDirectory(Logger.java:64)
+	at com.oracle.apm.agent.core.AgentInstance.setLogLocation(AgentInstance.java:397)
+	at com.oracle.apm.agent.resource.ResourceCollector$CollectionRunnable.run(ResourceCollector.java:267)
+	at com.oracle.apm.agent.utility.thread.WorkerScheduler$RecurringRunnable.run(WorkerScheduler.java:408)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at com.oracle.apm.agent.utility.pool.ScalableScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScalableScheduledThreadPoolExecutor.java:88)
+	at com.oracle.apm.agent.utility.pool.ScalableScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScalableScheduledThreadPoolExecutor.java:202)
+	at com.oracle.apm.agent.utility.pool.ScalableParentThreadPoolExecutor.runWorker(ScalableParentThreadPoolExecutor.java:887)
+	at com.oracle.apm.agent.utility.pool.ScalableParentThreadPoolExecutor$Worker.run(ScalableParentThreadPoolExecutor.java:353)
+	at java.lang.Thread.run(Thread.java:750)
+Oracle APM - Usable Space: 8796093020679 MB
+Oracle APM - Failed opening the log file [/apmprod-fss/oracle-apm-agent/log/backend-project-prod_UnresolvedVariable/Agent.log]
+java.io.FileNotFoundException: /apmprod-fss/oracle-apm-agent/log/backend-project-prod_UnresolvedVariable/Agent.log.lck (Permission denied)
+	at java.io.RandomAccessFile.open0(Native Method)
+	at java.io.RandomAccessFile.open(RandomAccessFile.java:316)
+	at java.io.RandomAccessFile.<init>(RandomAccessFile.java:243)
+	at com.oracle.apm.agent.utility.logging.FilePublisher.getExclusiveLogFileAccess(FilePublisher.java:139)
+	at com.oracle.apm.agent.utility.logging.FilePublisher.openFile(FilePublisher.java:94)
+	at com.oracle.apm.agent.utility.logging.FilePublisher.open(FilePublisher.java:82)
+	at com.oracle.apm.agent.utility.logging.FilePublisher.<init>(FilePublisher.java:69)
+	at com.oracle.apm.agent.utility.logging.FileLoggerManager.initializeLogDirectory(FileLoggerManager.java:116)
+	at com.oracle.apm.agent.utility.logging.Logger.initializeLogDirectory(Logger.java:64)
+	at com.oracle.apm.agent.core.AgentInstance.setLogLocation(AgentInstance.java:397)
+	at com.oracle.apm.agent.resource.ResourceCollector$CollectionRunnable.run(ResourceCollector.java:267)
+	at com.oracle.apm.agent.utility.thread.WorkerScheduler$RecurringRunnable.run(WorkerScheduler.java:408)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at com.oracle.apm.agent.utility.pool.ScalableScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScalableScheduledThreadPoolExecutor.java:88)
+	at com.oracle.apm.agent.utility.pool.ScalableScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScalableScheduledThreadPoolExecutor.java:202)
+	at com.oracle.apm.agent.utility.pool.ScalableParentThreadPoolExecutor.runWorker(ScalableParentThreadPoolExecutor.java:887)
+	at com.oracle.apm.agent.utility.pool.ScalableParentThreadPoolExecutor$Worker.run(ScalableParentThreadPoolExecutor.java:353)
+	at java.lang.Thread.run(Thread.java:750)
+Oracle APM - Usable Space: 8796093020679 MB
+Oracle APM - Failed opening the log file [/apmprod-fss/oracle-apm-agent/log/backend-project-prod_UnresolvedVariable/AgentStartup.log]
+java.io.FileNotFoundException: /apmprod-fss/oracle-apm-agent/log/backend-project-prod_UnresolvedVariable/AgentStartup.log.lck (Permission denied)
+	at java.io.RandomAccessFile.open0(Native Method)
+	at java.io.RandomAccessFile.open(RandomAccessFile.java:316)
+	at java.io.RandomAccessFile.<init>(RandomAccessFile.java:243)
+	at com.oracle.apm.agent.utility.logging.FilePublisher.getExclusiveLogFileAccess(FilePublisher.java:139)
+	at com.oracle.apm.agent.utility.logging.FilePublisher.openFile(FilePublisher.java:94)
+	at com.oracle.apm.agent.utility.logging.FilePublisher.open(FilePublisher.java:82)
+	at com.oracle.apm.agent.utility.logging.FilePublisher.<init>(FilePublisher.java:69)
+	at com.oracle.apm.agent.utility.logging.FileLoggerManager.initializeLogDirectory(FileLoggerManager.java:120)
+	at com.oracle.apm.agent.utility.logging.Logger.initializeLogDirectory(Logger.java:64)
+	at com.oracle.apm.agent.core.AgentInstance.setLogLocation(AgentInstance.java:397)
+	at com.oracle.apm.agent.resource.ResourceCollector$CollectionRunnable.run(ResourceCollector.java:267)
+	at com.oracle.apm.agent.utility.thread.WorkerScheduler$RecurringRunnable.run(WorkerScheduler.java:408)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at com.oracle.apm.agent.utility.pool.ScalableScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScalableScheduledThreadPoolExecutor.java:88)
+	at com.oracle.apm.agent.utility.pool.ScalableScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScalableScheduledThreadPoolExecutor.java:202)
+	at com.oracle.apm.agent.utility.pool.ScalableParentThreadPoolExecutor.runWorker(ScalableParentThreadPoolExecutor.java:887)
+	at com.oracle.apm.agent.utility.pool.ScalableParentThreadPoolExecutor$Worker.run(ScalableParentThreadPoolExecutor.java:353)
+	at java.lang.Thread.run(Thread.java:750)
+Oracle APM - Usable Space: 8796093020679 MB
+Oracle APM - Failed opening the log file [/apmprod-fss/oracle-apm-agent/log/backend-project-prod_UnresolvedVariable/AgentStatus.log]
+java.io.FileNotFoundException: /apmprod-fss/oracle-apm-agent/log/backend-project-prod_UnresolvedVariable/AgentStatus.log.lck (Permission denied)
+	at java.io.RandomAccessFile.open0(Native Method)
+	at java.io.RandomAccessFile.open(RandomAccessFile.java:316)
+	at java.io.RandomAccessFile.<init>(RandomAccessFile.java:243)
+	at com.oracle.apm.agent.utility.logging.FilePublisher.getExclusiveLogFileAccess(FilePublisher.java:139)
+	at com.oracle.apm.agent.utility.logging.FilePublisher.openFile(FilePublisher.java:94)
+	at com.oracle.apm.agent.utility.logging.FilePublisher.open(FilePublisher.java:82)
+	at com.oracle.apm.agent.utility.logging.FilePublisher.<init>(FilePublisher.java:69)
+	at com.oracle.apm.agent.utility.logging.FileLoggerManager.initializeLogDirectory(FileLoggerManager.java:121)
+	at com.oracle.apm.agent.utility.logging.Logger.initializeLogDirectory(Logger.java:64)
+	at com.oracle.apm.agent.core.AgentInstance.setLogLocation(AgentInstance.java:397)
+	at com.oracle.apm.agent.resource.ResourceCollector$CollectionRunnable.run(ResourceCollector.java:267)
+	at com.oracle.apm.agent.utility.thread.WorkerScheduler$RecurringRunnable.run(WorkerScheduler.java:408)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at com.oracle.apm.agent.utility.pool.ScalableScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScalableScheduledThreadPoolExecutor.java:88)
+	at com.oracle.apm.agent.utility.pool.ScalableScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScalableScheduledThreadPoolExecutor.java:202)
+	at com.oracle.apm.agent.utility.pool.ScalableParentThreadPoolExecutor.runWorker(ScalableParentThreadPoolExecutor.java:887)
+	at com.oracle.apm.agent.utility.pool.ScalableParentThreadPoolExecutor$Worker.run(ScalableParentThreadPoolExecutor.java:353)
+	at java.lang.Thread.run(Thread.java:750)
+07:53:37.906 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+07:53:37.906 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+07:53:37.906 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Fill pool skipped, pool is at sufficient level.
+07:53:38.022 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+07:53:38.022 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+07:53:38.022 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Fill pool skipped, pool is at sufficient level.
+07:54:07.906 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+07:54:07.907 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+07:54:07.908 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Fill pool skipped, pool is at sufficient level.
+07:54:08.022 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+07:54:08.023 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+07:54:08.023 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Fill pool skipped, pool is at sufficient level.
+07:54:37.908 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+07:54:37.909 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+07:54:37.909 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Fill pool skipped, pool is at sufficient level.
+07:54:38.023 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+07:54:38.023 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+07:54:38.024 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Fill pool skipped, pool is at sufficient level.
+07:54:52.029 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+07:55:07.909 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+07:55:07.910 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+07:55:07.911 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Fill pool skipped, pool is at sufficient level.
+07:55:08.024 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+07:55:08.024 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+07:55:08.024 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Fill pool skipped, pool is at sufficient level.
+07:55:37.911 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+07:55:37.912 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+07:55:37.912 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Fill pool skipped, pool is at sufficient level.
+07:55:38.025 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+07:55:38.025 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+07:55:38.025 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Fill pool skipped, pool is at sufficient level.
+07:56:07.912 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+07:56:07.913 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+07:56:07.914 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Fill pool skipped, pool is at sufficient level.
+07:56:08.025 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+07:56:08.026 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+07:56:08.026 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Fill pool skipped, pool is at sufficient level.
+07:56:37.914 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+07:56:37.915 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+07:56:37.915 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Fill pool skipped, pool is at sufficient level.
+07:56:38.026 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+07:56:38.027 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+07:56:38.027 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Fill pool skipped, pool is at sufficient level.
+07:57:07.915 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+07:57:07.916 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+07:57:07.916 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Fill pool skipped, pool is at sufficient level.
+07:57:08.027 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+07:57:08.027 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+07:57:08.028 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Fill pool skipped, pool is at sufficient level.
+07:57:37.917 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+07:57:37.918 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+07:57:37.918 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Fill pool skipped, pool is at sufficient level.
+07:57:38.028 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+07:57:38.028 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+07:57:38.029 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Fill pool skipped, pool is at sufficient level.
+07:58:07.918 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+07:58:07.919 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+07:58:07.919 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Fill pool skipped, pool is at sufficient level.
+07:58:08.029 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+07:58:08.029 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+07:58:08.029 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Fill pool skipped, pool is at sufficient level.
+07:58:37.919 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+07:58:37.920 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+07:58:37.920 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Fill pool skipped, pool is at sufficient level.
+07:58:38.030 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+07:58:38.030 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+07:58:38.030 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Fill pool skipped, pool is at sufficient level.
+07:59:07.920 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+07:59:07.921 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+07:59:07.921 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Fill pool skipped, pool is at sufficient level.
+07:59:08.030 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+07:59:08.031 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+07:59:08.031 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Fill pool skipped, pool is at sufficient level.
+07:59:37.922 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+07:59:37.923 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+07:59:37.923 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Fill pool skipped, pool is at sufficient level.
+07:59:38.031 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+07:59:38.031 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+07:59:38.032 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Fill pool skipped, pool is at sufficient level.
+07:59:52.030 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+08:00:07.923 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+08:00:07.923 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+08:00:07.923 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Fill pool skipped, pool is at sufficient level.
+08:00:08.032 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+08:00:08.032 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+08:00:08.032 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Fill pool skipped, pool is at sufficient level.
+08:00:37.923 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+08:00:37.924 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+08:00:37.925 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Fill pool skipped, pool is at sufficient level.
+08:00:38.032 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+08:00:38.033 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+08:00:38.033 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Fill pool skipped, pool is at sufficient level.
+08:01:07.925 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+08:01:07.926 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+08:01:07.926 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Fill pool skipped, pool is at sufficient level.
+08:01:08.033 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+08:01:08.034 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+08:01:08.034 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Fill pool skipped, pool is at sufficient level.
+08:01:37.926 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+08:01:37.927 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+08:01:37.927 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Fill pool skipped, pool is at sufficient level.
+08:01:38.034 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+08:01:38.034 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+08:01:38.034 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Fill pool skipped, pool is at sufficient level.
+08:02:07.927 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+08:02:07.928 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+08:02:07.928 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Fill pool skipped, pool is at sufficient level.
+08:02:08.034 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+08:02:08.035 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+08:02:08.035 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Fill pool skipped, pool is at sufficient level.
+08:02:37.928 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+08:02:37.929 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+08:02:37.929 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Fill pool skipped, pool is at sufficient level.
+08:02:38.035 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+08:02:38.035 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+08:02:38.035 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Fill pool skipped, pool is at sufficient level.
+08:03:07.930 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+08:03:07.931 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+08:03:07.931 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Fill pool skipped, pool is at sufficient level.
+08:03:08.036 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+08:03:08.036 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+08:03:08.036 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Fill pool skipped, pool is at sufficient level.
+08:03:37.931 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+08:03:37.932 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+08:03:37.932 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Fill pool skipped, pool is at sufficient level.
+08:03:38.036 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+08:03:38.037 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+08:03:38.037 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Fill pool skipped, pool is at sufficient level.
+08:04:07.932 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+08:04:07.933 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+08:04:07.933 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Fill pool skipped, pool is at sufficient level.
+08:04:08.037 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+08:04:08.037 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+08:04:08.037 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Fill pool skipped, pool is at sufficient level.
+08:04:37.933 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+08:04:37.934 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+08:04:37.935 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Fill pool skipped, pool is at sufficient level.
+08:04:38.038 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+08:04:38.038 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+08:04:38.038 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Fill pool skipped, pool is at sufficient level.
+08:04:52.032 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+08:05:07.935 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+08:05:07.935 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+08:05:07.936 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Fill pool skipped, pool is at sufficient level.
+08:05:08.038 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+08:05:08.039 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+08:05:08.039 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Fill pool skipped, pool is at sufficient level.
+08:05:37.936 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+08:05:37.937 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+08:05:37.937 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Fill pool skipped, pool is at sufficient level.
+08:05:38.039 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+08:05:38.039 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+08:05:38.039 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Fill pool skipped, pool is at sufficient level.
+08:06:07.937 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+08:06:07.938 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+08:06:07.938 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Fill pool skipped, pool is at sufficient level.
+08:06:08.039 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+08:06:08.040 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+08:06:08.040 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Fill pool skipped, pool is at sufficient level.
+08:06:37.938 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+08:06:37.939 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+08:06:37.939 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Fill pool skipped, pool is at sufficient level.
+08:06:38.040 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+08:06:38.040 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+08:06:38.041 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Fill pool skipped, pool is at sufficient level.
+08:07:07.939 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+08:07:07.940 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+08:07:07.941 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Fill pool skipped, pool is at sufficient level.
+08:07:08.041 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+08:07:08.041 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+08:07:08.041 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Fill pool skipped, pool is at sufficient level.
+08:07:37.941 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+08:07:37.942 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+08:07:37.942 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Fill pool skipped, pool is at sufficient level.
+08:07:38.041 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+08:07:38.042 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+08:07:38.042 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Fill pool skipped, pool is at sufficient level.
+08:08:07.942 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+08:08:07.943 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+08:08:07.943 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Fill pool skipped, pool is at sufficient level.
+08:08:08.042 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+08:08:08.042 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+08:08:08.042 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Fill pool skipped, pool is at sufficient level.
+08:08:37.943 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+08:08:37.944 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+08:08:37.944 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Fill pool skipped, pool is at sufficient level.
+08:08:38.042 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+08:08:38.043 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+08:08:38.043 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Fill pool skipped, pool is at sufficient level.
+08:09:07.944 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+08:09:07.945 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+08:09:07.945 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Fill pool skipped, pool is at sufficient level.
+08:09:08.043 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+08:09:08.044 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+08:09:08.044 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Fill pool skipped, pool is at sufficient level.
+08:09:37.945 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+08:09:37.946 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+08:09:37.946 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Fill pool skipped, pool is at sufficient level.
+08:09:38.044 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+08:09:38.044 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+08:09:38.044 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Fill pool skipped, pool is at sufficient level.
+08:09:52.033 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+08:10:07.946 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+08:10:07.947 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+08:10:07.947 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Fill pool skipped, pool is at sufficient level.
+08:10:08.044 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+08:10:08.045 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+08:10:08.045 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Fill pool skipped, pool is at sufficient level.
+08:10:37.948 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+08:10:37.948 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+08:10:37.948 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Fill pool skipped, pool is at sufficient level.
+08:10:38.045 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+08:10:38.045 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+08:10:38.045 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Fill pool skipped, pool is at sufficient level.
+08:11:07.949 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+08:11:07.949 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+08:11:07.949 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Fill pool skipped, pool is at sufficient level.
+08:11:08.046 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+08:11:08.046 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+08:11:08.046 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Fill pool skipped, pool is at sufficient level.
+08:11:37.950 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+08:11:37.950 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+08:11:37.951 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Fill pool skipped, pool is at sufficient level.
+08:11:38.046 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+08:11:38.046 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+08:11:38.046 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Fill pool skipped, pool is at sufficient level.
+08:12:07.951 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+08:12:07.952 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+08:12:07.952 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Fill pool skipped, pool is at sufficient level.
+08:12:08.047 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+08:12:08.047 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+08:12:08.047 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Fill pool skipped, pool is at sufficient level.
+08:12:37.952 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+08:12:37.953 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+08:12:37.953 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Fill pool skipped, pool is at sufficient level.
+08:12:38.047 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+08:12:38.047 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+08:12:38.048 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Fill pool skipped, pool is at sufficient level.
+08:13:07.953 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+08:13:07.954 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+08:13:07.954 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Fill pool skipped, pool is at sufficient level.
+08:13:08.048 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+08:13:08.048 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+08:13:08.048 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Fill pool skipped, pool is at sufficient level.
+08:13:37.954 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+08:13:37.955 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+08:13:37.955 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Fill pool skipped, pool is at sufficient level.
+08:13:38.048 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+08:13:38.049 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+08:13:38.049 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Fill pool skipped, pool is at sufficient level.
+08:14:07.955 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+08:14:07.956 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+08:14:07.956 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Fill pool skipped, pool is at sufficient level.
+08:14:07.984 [springHikariCPAutoCommitTrue connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - springHikariCPAutoCommitTrue - Closing connection com.mysql.cj.jdbc.ConnectionImpl@7d59e8d4: (connection has passed maxLifetime)
+08:14:07.998 [springHikariCPAutoCommitTrue connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Added connection com.mysql.cj.jdbc.ConnectionImpl@377b924d
+08:14:08.049 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+08:14:08.049 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+08:14:08.049 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Fill pool skipped, pool is at sufficient level.
+08:14:10.191 [springHikariCPAutoCommitFalse connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - springHikariCPAutoCommitFalse - Closing connection com.mysql.cj.jdbc.ConnectionImpl@303fe95c: (connection has passed maxLifetime)
+08:14:10.207 [springHikariCPAutoCommitFalse connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Added connection com.mysql.cj.jdbc.ConnectionImpl@d33e978
+08:14:21.296 [springHikariCPAutoCommitTrue connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - springHikariCPAutoCommitTrue - Closing connection com.mysql.cj.jdbc.ConnectionImpl@3ff6906b: (connection has passed maxLifetime)
+08:14:21.307 [springHikariCPAutoCommitTrue connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Added connection com.mysql.cj.jdbc.ConnectionImpl@1ec8bfa1
+08:14:29.660 [springHikariCPAutoCommitFalse connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - springHikariCPAutoCommitFalse - Closing connection com.mysql.cj.jdbc.ConnectionImpl@3fc447cf: (connection has passed maxLifetime)
+08:14:29.672 [springHikariCPAutoCommitFalse connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Added connection com.mysql.cj.jdbc.ConnectionImpl@540a41fb
+08:14:37.956 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+08:14:37.957 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+08:14:37.957 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Fill pool skipped, pool is at sufficient level.
+08:14:38.049 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+08:14:38.050 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+08:14:38.050 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Fill pool skipped, pool is at sufficient level.
+08:14:52.034 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+08:15:07.957 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+08:15:07.958 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+08:15:07.958 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Fill pool skipped, pool is at sufficient level.
+08:15:08.050 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+08:15:08.050 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+08:15:08.050 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Fill pool skipped, pool is at sufficient level.
+08:15:37.958 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+08:15:37.959 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+08:15:37.959 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Fill pool skipped, pool is at sufficient level.
+08:15:38.050 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+08:15:38.051 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+08:15:38.051 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Fill pool skipped, pool is at sufficient level.
+08:16:07.959 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+08:16:07.960 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+08:16:07.960 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Fill pool skipped, pool is at sufficient level.
+08:16:08.051 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+08:16:08.051 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+08:16:08.051 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Fill pool skipped, pool is at sufficient level.
+08:16:37.960 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+08:16:37.961 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+08:16:37.961 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Fill pool skipped, pool is at sufficient level.
+08:16:38.052 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+08:16:38.052 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+08:16:38.052 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Fill pool skipped, pool is at sufficient level.
+08:17:07.962 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+08:17:07.962 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+08:17:07.962 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Fill pool skipped, pool is at sufficient level.
+08:17:08.052 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+08:17:08.052 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+08:17:08.052 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Fill pool skipped, pool is at sufficient level.
+08:17:37.963 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+08:17:37.963 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+08:17:37.963 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Fill pool skipped, pool is at sufficient level.
+08:17:38.053 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+08:17:38.053 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+08:17:38.053 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Fill pool skipped, pool is at sufficient level.
+08:18:07.964 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+08:18:07.965 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+08:18:07.965 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Fill pool skipped, pool is at sufficient level.
+08:18:08.053 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+08:18:08.054 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+08:18:08.054 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Fill pool skipped, pool is at sufficient level.
+08:18:37.965 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+08:18:37.965 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+08:18:37.965 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Fill pool skipped, pool is at sufficient level.
+08:18:38.054 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+08:18:38.054 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+08:18:38.054 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Fill pool skipped, pool is at sufficient level.
+08:19:07.966 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+08:19:07.966 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+08:19:07.966 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Fill pool skipped, pool is at sufficient level.
+08:19:08.054 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+08:19:08.055 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+08:19:08.055 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Fill pool skipped, pool is at sufficient level.
+08:19:37.967 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+08:19:37.968 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+08:19:37.968 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Fill pool skipped, pool is at sufficient level.
+08:19:38.055 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+08:19:38.055 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+08:19:38.055 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Fill pool skipped, pool is at sufficient level.
+08:19:52.035 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+08:20:07.968 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+08:20:07.969 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+08:20:07.969 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Fill pool skipped, pool is at sufficient level.
+08:20:08.055 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+08:20:08.056 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+08:20:08.056 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Fill pool skipped, pool is at sufficient level.
+08:20:37.969 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+08:20:37.970 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+08:20:37.970 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Fill pool skipped, pool is at sufficient level.
+08:20:38.056 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+08:20:38.056 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+08:20:38.056 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Fill pool skipped, pool is at sufficient level.
+08:21:07.970 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+08:21:07.971 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+08:21:07.971 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Fill pool skipped, pool is at sufficient level.
+08:21:08.056 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+08:21:08.057 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+08:21:08.057 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Fill pool skipped, pool is at sufficient level.
+08:21:37.972 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+08:21:37.972 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+08:21:37.972 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Fill pool skipped, pool is at sufficient level.
+08:21:38.057 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+08:21:38.057 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+08:21:38.057 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Fill pool skipped, pool is at sufficient level.
+08:22:07.973 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+08:22:07.974 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+08:22:07.974 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Fill pool skipped, pool is at sufficient level.
+08:22:08.057 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+08:22:08.058 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+08:22:08.058 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Fill pool skipped, pool is at sufficient level.
+08:22:37.974 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+08:22:37.975 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+08:22:37.975 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Fill pool skipped, pool is at sufficient level.
+08:22:38.058 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+08:22:38.058 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+08:22:38.058 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Fill pool skipped, pool is at sufficient level.
+08:23:07.975 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+08:23:07.976 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+08:23:07.976 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Fill pool skipped, pool is at sufficient level.
+08:23:08.058 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+08:23:08.059 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+08:23:08.059 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Fill pool skipped, pool is at sufficient level.
+08:23:37.976 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+08:23:37.977 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+08:23:37.977 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Fill pool skipped, pool is at sufficient level.
+08:23:38.059 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+08:23:38.059 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+08:23:38.059 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Fill pool skipped, pool is at sufficient level.
+08:24:07.977 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+08:24:07.978 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+08:24:07.979 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Fill pool skipped, pool is at sufficient level.
+08:24:08.060 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+08:24:08.060 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+08:24:08.060 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Fill pool skipped, pool is at sufficient level.
+08:24:37.979 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+08:24:37.980 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+08:24:37.980 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Fill pool skipped, pool is at sufficient level.
+08:24:38.060 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+08:24:38.060 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+08:24:38.060 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Fill pool skipped, pool is at sufficient level.
+08:24:52.036 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+08:25:07.980 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+08:25:07.981 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+08:25:07.981 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Fill pool skipped, pool is at sufficient level.
+08:25:08.061 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+08:25:08.061 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+08:25:08.061 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Fill pool skipped, pool is at sufficient level.
+08:25:37.981 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+08:25:37.982 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+08:25:37.982 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Fill pool skipped, pool is at sufficient level.
+08:25:38.061 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+08:25:38.061 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+08:25:38.061 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Fill pool skipped, pool is at sufficient level.
+08:26:07.982 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+08:26:07.983 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+08:26:07.983 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Fill pool skipped, pool is at sufficient level.
+08:26:08.062 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+08:26:08.062 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+08:26:08.062 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Fill pool skipped, pool is at sufficient level.
+08:26:37.983 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+08:26:37.984 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+08:26:37.984 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Fill pool skipped, pool is at sufficient level.
+08:26:38.062 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+08:26:38.063 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+08:26:38.063 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Fill pool skipped, pool is at sufficient level.
+08:27:07.984 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+08:27:07.985 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+08:27:07.985 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Fill pool skipped, pool is at sufficient level.
+08:27:08.063 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+08:27:08.063 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+08:27:08.063 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Fill pool skipped, pool is at sufficient level.
+08:27:37.985 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+08:27:37.986 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+08:27:37.986 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Fill pool skipped, pool is at sufficient level.
+08:27:38.063 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+08:27:38.064 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+08:27:38.064 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Fill pool skipped, pool is at sufficient level.
+08:28:07.987 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+08:28:07.987 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+08:28:07.988 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Fill pool skipped, pool is at sufficient level.
+08:28:08.064 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+08:28:08.064 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+08:28:08.064 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Fill pool skipped, pool is at sufficient level.
+08:28:37.988 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+08:28:37.989 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+08:28:37.989 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Fill pool skipped, pool is at sufficient level.
+08:28:38.064 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+08:28:38.065 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+08:28:38.065 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Fill pool skipped, pool is at sufficient level.
+08:29:07.989 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+08:29:07.990 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+08:29:07.990 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Fill pool skipped, pool is at sufficient level.
+08:29:08.065 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+08:29:08.065 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+08:29:08.065 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Fill pool skipped, pool is at sufficient level.
+08:29:37.990 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+08:29:37.991 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+08:29:37.991 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Fill pool skipped, pool is at sufficient level.
+08:29:38.065 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+08:29:38.066 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+08:29:38.066 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Fill pool skipped, pool is at sufficient level.
+08:29:52.037 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+08:30:07.991 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+08:30:07.992 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+08:30:07.992 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Fill pool skipped, pool is at sufficient level.
+08:30:08.066 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+08:30:08.066 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+08:30:08.066 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Fill pool skipped, pool is at sufficient level.
+08:30:37.992 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+08:30:37.993 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+08:30:37.993 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Fill pool skipped, pool is at sufficient level.
+08:30:38.067 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+08:30:38.067 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+08:30:38.067 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Fill pool skipped, pool is at sufficient level.
+08:31:07.993 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+08:31:07.994 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+08:31:07.994 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Fill pool skipped, pool is at sufficient level.
+08:31:08.067 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+08:31:08.067 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+08:31:08.067 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Fill pool skipped, pool is at sufficient level.
+08:31:37.994 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+08:31:37.995 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+08:31:37.995 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Fill pool skipped, pool is at sufficient level.
+08:31:38.067 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+08:31:38.068 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+08:31:38.068 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Fill pool skipped, pool is at sufficient level.
+08:32:07.995 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+08:32:07.996 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+08:32:07.996 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Fill pool skipped, pool is at sufficient level.
+08:32:08.068 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+08:32:08.068 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+08:32:08.068 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Fill pool skipped, pool is at sufficient level.
+08:32:37.997 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+08:32:37.998 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+08:32:37.998 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Fill pool skipped, pool is at sufficient level.
+08:32:38.069 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+08:32:38.069 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+08:32:38.069 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Fill pool skipped, pool is at sufficient level.
+08:33:07.998 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+08:33:07.999 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+08:33:07.999 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Fill pool skipped, pool is at sufficient level.
+08:33:08.069 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+08:33:08.070 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+08:33:08.070 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Fill pool skipped, pool is at sufficient level.
+08:33:37.999 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+08:33:38.000 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+08:33:38.000 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Fill pool skipped, pool is at sufficient level.
+08:33:38.070 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+08:33:38.070 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+08:33:38.070 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Fill pool skipped, pool is at sufficient level.
+08:34:08.000 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+08:34:08.001 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+08:34:08.001 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Fill pool skipped, pool is at sufficient level.
+08:34:08.070 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+08:34:08.071 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+08:34:08.071 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Fill pool skipped, pool is at sufficient level.
