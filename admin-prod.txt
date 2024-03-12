@@ -1,0 +1,1400 @@
+Oracle APM Agent: Starting APM Agent [premain]
+Oracle APM Agent: Wrapper: version, hybrid
+Oracle APM Agent: [DirectoryLocation] initialized on classloader [null]
+Oracle APM - temp log directory is /tmp/
+Oracle APM Agent: Parsing instrumentation directives
+Oracle APM Agent: Loading directives from [built-in.directives]
+Oracle APM Agent: Loading directives from [/apmprod-fss/oracle-apm-agent/config/1.11.1.4/DirectivesConfig.acml]
+Oracle APM Agent: Parsed a total of [199] directives
+Oracle APM Agent: Initializing AgentInstance
+Oracle APM Agent: Initialized AgentInstance
+Oracle APM Agent: Started [premain] Agent
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.3.1.RELEASE)
+
+18:05:19.800 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:8888
+18:05:20.492 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Connect Timeout Exception on Url - http://localhost:8888. Will be trying the next url if available
+18:05:20.493 [main] WARN  o.s.c.c.c.ConfigServicePropertySourceLocator - Could not locate PropertySource: I/O error on GET request for "http://localhost:8888/maha-rera-administration-service/prod": Connection refused (Connection refused); nested exception is java.net.ConnectException: Connection refused (Connection refused)
+18:05:20.566 [main] INFO  c.r.a.AdministrationApplication - The following profiles are active: prod
+18:05:29.583 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+18:05:29.678 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 82ms. Found 0 JDBC repository interfaces.
+18:05:30.891 [main] WARN  o.s.boot.actuate.endpoint.EndpointId - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+18:05:33.168 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=f86dd0dc-434e-3b00-a2d7-b9a91c24bd53
+18:05:41.591 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+18:05:41.665 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactiveLoadBalancerConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactiveLoadBalancerConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+18:05:41.668 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'deferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+18:05:44.893 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9299 (http)
+18:05:45.068 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9299"]
+18:05:45.069 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+18:05:45.069 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.36]
+18:05:45.894 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+18:05:45.894 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 25127 ms
+18:05:46.664 [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+18:05:46.664 [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+18:05:46.978 [main] INFO  c.n.config.DynamicPropertyFactory - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@328f46f9
+18:05:48.895 [main] WARN  o.s.c.s.z.ZipkinAutoConfiguration - Check result of the [RabbitMQSender{addresses=[localhost:5672], queue=zipkin}] contains an error [CheckResult{ok=false, error=java.lang.RuntimeException: Unable to establish connection to RabbitMQ server}]
+18:05:50.382 [main] DEBUG com.zaxxer.hikari.HikariConfig - Driver class com.mysql.jdbc.Driver found in Thread context class loader TomcatEmbeddedWebappClassLoader
+  context: ROOT
+  delegate: true
+----------> Parent Classloader:
+org.springframework.boot.loader.LaunchedURLClassLoader@3d34d211
+
+Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.
+18:05:50.483 [main] DEBUG com.zaxxer.hikari.HikariConfig - springHikariCPAutoCommitFalse - configuration:
+18:05:50.485 [main] DEBUG com.zaxxer.hikari.HikariConfig - allowPoolSuspension.............false
+18:05:50.486 [main] DEBUG com.zaxxer.hikari.HikariConfig - autoCommit......................false
+18:05:50.486 [main] DEBUG com.zaxxer.hikari.HikariConfig - catalog.........................none
+18:05:50.487 [main] DEBUG com.zaxxer.hikari.HikariConfig - connectionInitSql...............none
+18:05:50.487 [main] DEBUG com.zaxxer.hikari.HikariConfig - connectionTestQuery............."SELECT 1"
+18:05:50.487 [main] DEBUG com.zaxxer.hikari.HikariConfig - connectionTimeout...............30000
+18:05:50.488 [main] DEBUG com.zaxxer.hikari.HikariConfig - dataSource......................none
+18:05:50.488 [main] DEBUG com.zaxxer.hikari.HikariConfig - dataSourceClassName.............none
+18:05:50.488 [main] DEBUG com.zaxxer.hikari.HikariConfig - dataSourceJNDI..................none
+18:05:50.489 [main] DEBUG com.zaxxer.hikari.HikariConfig - dataSourceProperties............{dataSource.cachePrepStmts=true, dataSource.useServerPrepStmts=true, password=<masked>, dataSource.prepStmtCacheSize=250, dataSource.prepStmtCacheSqlLimit=2048}
+18:05:50.489 [main] DEBUG com.zaxxer.hikari.HikariConfig - driverClassName................."com.mysql.jdbc.Driver"
+18:05:50.490 [main] DEBUG com.zaxxer.hikari.HikariConfig - exceptionOverrideClassName......none
+18:05:50.490 [main] DEBUG com.zaxxer.hikari.HikariConfig - healthCheckProperties...........{}
+18:05:50.490 [main] DEBUG com.zaxxer.hikari.HikariConfig - healthCheckRegistry.............none
+18:05:50.491 [main] DEBUG com.zaxxer.hikari.HikariConfig - idleTimeout.....................60000
+18:05:50.491 [main] DEBUG com.zaxxer.hikari.HikariConfig - initializationFailTimeout.......1
+18:05:50.491 [main] DEBUG com.zaxxer.hikari.HikariConfig - isolateInternalQueries..........false
+18:05:50.492 [main] DEBUG com.zaxxer.hikari.HikariConfig - jdbcUrl.........................jdbc:mysql://172.18.14.168:3306/administration?serverTimezone=Asia/Kolkata
+18:05:50.492 [main] DEBUG com.zaxxer.hikari.HikariConfig - leakDetectionThreshold..........0
+18:05:50.492 [main] DEBUG com.zaxxer.hikari.HikariConfig - maxLifetime.....................180000
+18:05:50.493 [main] DEBUG com.zaxxer.hikari.HikariConfig - maximumPoolSize.................10
+18:05:50.493 [main] DEBUG com.zaxxer.hikari.HikariConfig - metricRegistry..................none
+18:05:50.564 [main] DEBUG com.zaxxer.hikari.HikariConfig - metricsTrackerFactory...........none
+18:05:50.564 [main] DEBUG com.zaxxer.hikari.HikariConfig - minimumIdle.....................2
+18:05:50.565 [main] DEBUG com.zaxxer.hikari.HikariConfig - password........................<masked>
+18:05:50.565 [main] DEBUG com.zaxxer.hikari.HikariConfig - poolName........................"springHikariCPAutoCommitFalse"
+18:05:50.566 [main] DEBUG com.zaxxer.hikari.HikariConfig - readOnly........................false
+18:05:50.566 [main] DEBUG com.zaxxer.hikari.HikariConfig - registerMbeans..................false
+18:05:50.567 [main] DEBUG com.zaxxer.hikari.HikariConfig - scheduledExecutor...............none
+18:05:50.567 [main] DEBUG com.zaxxer.hikari.HikariConfig - schema..........................none
+18:05:50.567 [main] DEBUG com.zaxxer.hikari.HikariConfig - threadFactory...................internal
+18:05:50.568 [main] DEBUG com.zaxxer.hikari.HikariConfig - transactionIsolation............default
+18:05:50.568 [main] DEBUG com.zaxxer.hikari.HikariConfig - username........................"admin1"
+18:05:50.568 [main] DEBUG com.zaxxer.hikari.HikariConfig - validationTimeout...............5000
+18:05:50.570 [main] INFO  com.zaxxer.hikari.HikariDataSource - springHikariCPAutoCommitFalse - Starting...
+18:05:50.592 [main] WARN  c.z.hikari.util.DriverDataSource - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+18:05:50.592 [main] DEBUG c.z.hikari.util.DriverDataSource - Driver class com.mysql.jdbc.Driver found in Thread context class loader TomcatEmbeddedWebappClassLoader
+  context: ROOT
+  delegate: true
+----------> Parent Classloader:
+org.springframework.boot.loader.LaunchedURLClassLoader@3d34d211
+
+18:05:52.800 [main] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Added connection com.mysql.cj.jdbc.ConnectionImpl@695d804
+18:05:52.804 [main] INFO  com.zaxxer.hikari.HikariDataSource - springHikariCPAutoCommitFalse - Start completed.
+Datasource Created Sucessfully...
+18:05:52.904 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Before cleanup stats (total=1, active=0, idle=1, waiting=0)
+18:05:52.966 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - After cleanup  stats (total=1, active=0, idle=1, waiting=0)
+18:05:52.969 [main] DEBUG com.zaxxer.hikari.HikariConfig - Driver class com.mysql.jdbc.Driver found in Thread context class loader TomcatEmbeddedWebappClassLoader
+  context: ROOT
+  delegate: true
+----------> Parent Classloader:
+org.springframework.boot.loader.LaunchedURLClassLoader@3d34d211
+
+18:05:52.970 [main] DEBUG com.zaxxer.hikari.HikariConfig - springHikariCPAutoCommitTrue - configuration:
+18:05:52.971 [main] DEBUG com.zaxxer.hikari.HikariConfig - allowPoolSuspension.............false
+18:05:52.971 [main] DEBUG com.zaxxer.hikari.HikariConfig - autoCommit......................true
+18:05:52.972 [main] DEBUG com.zaxxer.hikari.HikariConfig - catalog.........................none
+18:05:52.972 [main] DEBUG com.zaxxer.hikari.HikariConfig - connectionInitSql...............none
+18:05:52.972 [main] DEBUG com.zaxxer.hikari.HikariConfig - connectionTestQuery............."SELECT 1"
+18:05:52.973 [main] DEBUG com.zaxxer.hikari.HikariConfig - connectionTimeout...............30000
+18:05:52.973 [main] DEBUG com.zaxxer.hikari.HikariConfig - dataSource......................none
+18:05:52.973 [main] DEBUG com.zaxxer.hikari.HikariConfig - dataSourceClassName.............none
+18:05:52.974 [main] DEBUG com.zaxxer.hikari.HikariConfig - dataSourceJNDI..................none
+18:05:52.975 [main] DEBUG com.zaxxer.hikari.HikariConfig - dataSourceProperties............{dataSource.cachePrepStmts=true, dataSource.useServerPrepStmts=true, password=<masked>, dataSource.prepStmtCacheSize=250, dataSource.prepStmtCacheSqlLimit=2048}
+18:05:52.975 [main] DEBUG com.zaxxer.hikari.HikariConfig - driverClassName................."com.mysql.jdbc.Driver"
+18:05:52.975 [main] DEBUG com.zaxxer.hikari.HikariConfig - exceptionOverrideClassName......none
+18:05:52.976 [main] DEBUG com.zaxxer.hikari.HikariConfig - healthCheckProperties...........{}
+18:05:52.976 [main] DEBUG com.zaxxer.hikari.HikariConfig - healthCheckRegistry.............none
+18:05:52.977 [main] DEBUG com.zaxxer.hikari.HikariConfig - idleTimeout.....................60000
+18:05:52.977 [main] DEBUG com.zaxxer.hikari.HikariConfig - initializationFailTimeout.......1
+18:05:52.977 [main] DEBUG com.zaxxer.hikari.HikariConfig - isolateInternalQueries..........false
+18:05:52.978 [main] DEBUG com.zaxxer.hikari.HikariConfig - jdbcUrl.........................jdbc:mysql://172.18.14.168:3306/administration?serverTimezone=Asia/Kolkata
+18:05:52.979 [main] DEBUG com.zaxxer.hikari.HikariConfig - leakDetectionThreshold..........0
+18:05:52.979 [main] DEBUG com.zaxxer.hikari.HikariConfig - maxLifetime.....................180000
+18:05:52.979 [main] DEBUG com.zaxxer.hikari.HikariConfig - maximumPoolSize.................10
+18:05:52.980 [main] DEBUG com.zaxxer.hikari.HikariConfig - metricRegistry..................none
+18:05:52.980 [main] DEBUG com.zaxxer.hikari.HikariConfig - metricsTrackerFactory...........none
+18:05:52.980 [main] DEBUG com.zaxxer.hikari.HikariConfig - minimumIdle.....................2
+18:05:52.981 [main] DEBUG com.zaxxer.hikari.HikariConfig - password........................<masked>
+18:05:52.981 [main] DEBUG com.zaxxer.hikari.HikariConfig - poolName........................"springHikariCPAutoCommitTrue"
+18:05:52.981 [main] DEBUG com.zaxxer.hikari.HikariConfig - readOnly........................false
+18:05:52.982 [main] DEBUG com.zaxxer.hikari.HikariConfig - registerMbeans..................false
+18:05:52.982 [main] DEBUG com.zaxxer.hikari.HikariConfig - scheduledExecutor...............none
+18:05:52.983 [main] DEBUG com.zaxxer.hikari.HikariConfig - schema..........................none
+18:05:52.983 [main] DEBUG com.zaxxer.hikari.HikariConfig - threadFactory...................internal
+18:05:52.984 [main] DEBUG com.zaxxer.hikari.HikariConfig - transactionIsolation............default
+18:05:52.984 [main] DEBUG com.zaxxer.hikari.HikariConfig - username........................"admin1"
+18:05:53.064 [main] DEBUG com.zaxxer.hikari.HikariConfig - validationTimeout...............5000
+18:05:53.064 [main] INFO  com.zaxxer.hikari.HikariDataSource - springHikariCPAutoCommitTrue - Starting...
+18:05:53.065 [main] WARN  c.z.hikari.util.DriverDataSource - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+18:05:53.065 [main] DEBUG c.z.hikari.util.DriverDataSource - Driver class com.mysql.jdbc.Driver found in Thread context class loader TomcatEmbeddedWebappClassLoader
+  context: ROOT
+  delegate: true
+----------> Parent Classloader:
+org.springframework.boot.loader.LaunchedURLClassLoader@3d34d211
+
+18:05:53.068 [springHikariCPAutoCommitFalse connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Added connection com.mysql.cj.jdbc.ConnectionImpl@46b3f5f3
+18:05:53.068 [springHikariCPAutoCommitFalse connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - After adding stats (total=2, active=0, idle=2, waiting=0)
+18:05:53.081 [main] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Added connection com.mysql.cj.jdbc.ConnectionImpl@396d21ec
+18:05:53.082 [main] INFO  com.zaxxer.hikari.HikariDataSource - springHikariCPAutoCommitTrue - Start completed.
+Datasource Created Sucessfully...
+18:05:53.184 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Before cleanup stats (total=1, active=0, idle=1, waiting=0)
+18:05:53.184 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - After cleanup  stats (total=1, active=0, idle=1, waiting=0)
+18:05:53.274 [springHikariCPAutoCommitTrue connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Added connection com.mysql.cj.jdbc.ConnectionImpl@196910b2
+18:05:53.275 [springHikariCPAutoCommitTrue connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - After adding stats (total=2, active=0, idle=2, waiting=0)
+18:05:57.478 [main] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+18:05:57.479 [main] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+18:05:59.167 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+18:06:03.774 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+18:06:12.467 [main] DEBUG c.zaxxer.hikari.pool.ProxyConnection - springHikariCPAutoCommitFalse - Executed rollback on connection com.mysql.cj.jdbc.ConnectionImpl@695d804 due to dirty commit state on close().
+18:06:13.168 [main] WARN  o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger - You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+18:06:13.366 [main] WARN  o.s.c.c.l.r.ReactorLoadBalancerClientAutoConfiguration$ReactorLoadBalancerClientRibbonWarnLogger - You have RibbonLoadBalancerClient on your classpath. LoadBalancerExchangeFilterFunction that uses it under the hood will be used by default. Spring Cloud Ribbon is now in maintenance mode, so we suggest switching to ReactorLoadBalancerExchangeFilterFunction instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+18:06:14.176 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+18:06:14.765 [main] INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+18:06:15.083 [main] INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+18:06:15.683 [main] INFO  c.n.d.p.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+18:06:15.683 [main] INFO  c.n.d.p.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+18:06:17.397 [main] INFO  c.n.d.p.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+18:06:17.398 [main] INFO  c.n.d.p.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+18:06:18.272 [main] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+18:06:18.468 [main] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+18:06:18.468 [main] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+18:06:18.469 [main] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+18:06:18.469 [main] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+18:06:18.469 [main] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+18:06:18.469 [main] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+18:06:18.470 [main] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+18:06:22.905 [main] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+18:06:22.908 [main] INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+18:06:22.911 [main] INFO  c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+18:06:22.965 [main] INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1710246982964 with initial instances count: 0
+18:06:22.966 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+18:06:22.967 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+18:06:22.967 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Fill pool skipped, pool is at sufficient level.
+18:06:22.973 [main] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application MAHA-RERA-ADMINISTRATION-SERVICE with eureka with status UP
+18:06:22.974 [main] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1710246982974, current=UP, previous=STARTING]
+18:06:22.976 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9299"]
+18:06:22.981 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_MAHA-RERA-ADMINISTRATION-SERVICE/backend-administartion-prod:maha-rera-administration-service:9299: registering service...
+18:06:23.169 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9299 (http) with context path ''
+18:06:23.170 [main] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 9299
+18:06:23.185 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+18:06:23.185 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+18:06:23.185 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Fill pool skipped, pool is at sufficient level.
+18:06:23.280 [main] INFO  c.r.a.AdministrationApplication - Started AdministrationApplication in 74.096 seconds (JVM running for 95.365)
+18:06:23.486 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_MAHA-RERA-ADMINISTRATION-SERVICE/backend-administartion-prod:maha-rera-administration-service:9299 - registration status: 204
+18:06:52.909 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+18:06:52.910 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+18:06:52.910 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+18:06:52.910 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+18:06:52.910 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+18:06:52.910 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: false
+18:06:52.911 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+18:06:52.967 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+18:06:52.968 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+18:06:52.968 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Fill pool skipped, pool is at sufficient level.
+18:06:52.973 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+18:06:53.263 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+18:06:53.264 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+18:06:53.264 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Fill pool skipped, pool is at sufficient level.
+18:07:07.924 [http-nio-9299-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+18:07:07.925 [http-nio-9299-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+18:07:07.981 [http-nio-9299-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 56 ms
+18:07:08.372 [http-nio-9299-exec-1] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@399511590 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('nawrk',now())
+18:07:09.379 [http-nio-9299-exec-1] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:07:10.499 [AsyncReporter{RabbitMQSender{addresses=[localhost:5672], queue=zipkin}}] WARN  z.r.AsyncReporter$BoundedAsyncReporter - Spans were dropped due to exceptions. All subsequent errors will be logged at FINE level.
+18:07:10.502 [AsyncReporter{RabbitMQSender{addresses=[localhost:5672], queue=zipkin}}] WARN  z.r.AsyncReporter$BoundedAsyncReporter - Dropped 1 spans due to RuntimeException(Unable to establish connection to RabbitMQ server)
+java.lang.RuntimeException: Unable to establish connection to RabbitMQ server
+	at zipkin2.reporter.amqp.RabbitMQSender.newConnection(RabbitMQSender.java:250)
+	at zipkin2.reporter.amqp.RabbitMQSender.get(RabbitMQSender.java:239)
+	at zipkin2.reporter.amqp.RabbitMQSender.localChannel(RabbitMQSender.java:272)
+	at zipkin2.reporter.amqp.RabbitMQSender$RabbitMQCall.publish(RabbitMQSender.java:291)
+	at zipkin2.reporter.amqp.RabbitMQSender$RabbitMQCall.doExecute(RabbitMQSender.java:286)
+	at zipkin2.reporter.amqp.RabbitMQSender$RabbitMQCall.doExecute(RabbitMQSender.java:278)
+	at zipkin2.Call$Base.execute(Call.java:380)
+	at zipkin2.reporter.AsyncReporter$BoundedAsyncReporter.flush(AsyncReporter.java:299)
+	at zipkin2.reporter.AsyncReporter$Flusher.run(AsyncReporter.java:378)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:607)
+	at com.rabbitmq.client.impl.SocketFrameHandlerFactory.create(SocketFrameHandlerFactory.java:60)
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1137)
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1087)
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:964)
+	at zipkin2.reporter.amqp.RabbitMQSender.newConnection(RabbitMQSender.java:248)
+	... 9 common frames omitted
+18:07:19.844 [http-nio-9299-exec-2] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@138127064 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('g4mck',now())
+18:07:19.863 [http-nio-9299-exec-2] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:07:22.968 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+18:07:22.969 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+18:07:22.969 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Fill pool skipped, pool is at sufficient level.
+18:07:23.264 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+18:07:23.265 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+18:07:23.265 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Fill pool skipped, pool is at sufficient level.
+18:07:23.986 [http-nio-9299-exec-5] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+18:07:23.986 [http-nio-9299-exec-7] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+18:07:23.986 [http-nio-9299-exec-9] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+18:07:23.987 [http-nio-9299-exec-3] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+18:07:23.987 [http-nio-9299-exec-8] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+18:07:23.987 [http-nio-9299-exec-6] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+18:07:23.987 [http-nio-9299-exec-4] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@1217121935 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('hwhkd',now())
+18:07:24.069 [http-nio-9299-exec-3] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+ps : HikariProxyPreparedStatement@184897331 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('hhd6p',now())
+18:07:24.074 [http-nio-9299-exec-9] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+ps : HikariProxyPreparedStatement@315469733 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('6f6k2',now())
+18:07:24.164 [http-nio-9299-exec-7] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+ps : HikariProxyPreparedStatement@1078515872 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('fw57e',now())
+ps : HikariProxyPreparedStatement@800625669 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('md82r',now())
+18:07:24.171 [http-nio-9299-exec-4] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+ps : HikariProxyPreparedStatement@2034500595 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('w75yf',now())
+18:07:24.174 [http-nio-9299-exec-8] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+ps : HikariProxyPreparedStatement@937166374 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('x7b37',now())
+18:07:24.264 [http-nio-9299-exec-5] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:07:24.267 [http-nio-9299-exec-6] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:07:24.279 [springHikariCPAutoCommitTrue connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Added connection com.mysql.cj.jdbc.ConnectionImpl@5ca00fb4
+18:07:25.257 [http-nio-9299-exec-10] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@1160387948 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('eeaf2',now())
+18:07:25.268 [http-nio-9299-exec-10] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:07:25.346 [http-nio-9299-exec-1] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@875879746 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('gwyb6',now())
+18:07:25.357 [http-nio-9299-exec-1] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:07:28.502 [http-nio-9299-exec-2] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@145357486 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('4pfr7',now())
+18:07:28.512 [http-nio-9299-exec-2] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:07:30.234 [http-nio-9299-exec-3] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@1394156251 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('yawra',now())
+18:07:30.246 [http-nio-9299-exec-3] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:07:33.196 [http-nio-9299-exec-9] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@1256433592 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('e3f3g',now())
+18:07:33.207 [http-nio-9299-exec-9] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:07:41.967 [http-nio-9299-exec-7] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@941835478 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('gcf6m',now())
+18:07:41.978 [http-nio-9299-exec-7] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:07:43.758 [http-nio-9299-exec-4] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@1776052982 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('446mb',now())
+18:07:43.777 [http-nio-9299-exec-4] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:07:44.486 [http-nio-9299-exec-8] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@887317964 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('g5hxc',now())
+18:07:44.497 [http-nio-9299-exec-8] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:07:52.969 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+18:07:52.970 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+18:07:52.970 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Fill pool skipped, pool is at sufficient level.
+18:07:53.265 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Before cleanup stats (total=3, active=0, idle=3, waiting=0)
+18:07:53.266 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - After cleanup  stats (total=3, active=0, idle=3, waiting=0)
+18:07:53.266 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Fill pool skipped, pool is at sufficient level.
+18:08:22.970 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+18:08:22.971 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+18:08:22.972 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Fill pool skipped, pool is at sufficient level.
+18:08:23.266 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Before cleanup stats (total=3, active=0, idle=3, waiting=0)
+18:08:23.266 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - After cleanup  stats (total=3, active=0, idle=3, waiting=0)
+18:08:23.267 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Fill pool skipped, pool is at sufficient level.
+18:08:49.532 [springHikariCPAutoCommitFalse connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - springHikariCPAutoCommitFalse - Closing connection com.mysql.cj.jdbc.ConnectionImpl@695d804: (connection has passed maxLifetime)
+18:08:49.545 [springHikariCPAutoCommitFalse connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Added connection com.mysql.cj.jdbc.ConnectionImpl@3e8b693f
+18:08:49.755 [springHikariCPAutoCommitTrue connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - springHikariCPAutoCommitTrue - Closing connection com.mysql.cj.jdbc.ConnectionImpl@396d21ec: (connection has passed maxLifetime)
+18:08:49.756 [springHikariCPAutoCommitTrue connection closer] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Fill pool skipped, pool is at sufficient level.
+18:08:50.827 [springHikariCPAutoCommitTrue connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - springHikariCPAutoCommitTrue - Closing connection com.mysql.cj.jdbc.ConnectionImpl@196910b2: (connection has passed maxLifetime)
+18:08:50.841 [springHikariCPAutoCommitTrue connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Added connection com.mysql.cj.jdbc.ConnectionImpl@2b27775f
+18:08:51.582 [springHikariCPAutoCommitFalse connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - springHikariCPAutoCommitFalse - Closing connection com.mysql.cj.jdbc.ConnectionImpl@46b3f5f3: (connection has passed maxLifetime)
+18:08:51.594 [springHikariCPAutoCommitFalse connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Added connection com.mysql.cj.jdbc.ConnectionImpl@7fb66304
+18:08:52.972 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+18:08:52.972 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+18:08:52.972 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Fill pool skipped, pool is at sufficient level.
+18:08:53.267 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+18:08:53.267 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+18:08:53.267 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Fill pool skipped, pool is at sufficient level.
+18:09:22.973 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+18:09:22.974 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+18:09:22.974 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Fill pool skipped, pool is at sufficient level.
+18:09:23.268 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+18:09:23.268 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+18:09:23.268 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Fill pool skipped, pool is at sufficient level.
+18:09:52.974 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+18:09:52.976 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+18:09:52.976 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Fill pool skipped, pool is at sufficient level.
+18:09:53.268 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+18:09:53.269 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+18:09:53.269 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Fill pool skipped, pool is at sufficient level.
+18:10:21.139 [springHikariCPAutoCommitTrue connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - springHikariCPAutoCommitTrue - Closing connection com.mysql.cj.jdbc.ConnectionImpl@5ca00fb4: (connection has passed maxLifetime)
+18:10:21.152 [springHikariCPAutoCommitTrue connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Added connection com.mysql.cj.jdbc.ConnectionImpl@62838014
+18:10:22.976 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+18:10:22.976 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+18:10:22.977 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Fill pool skipped, pool is at sufficient level.
+18:10:23.269 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+18:10:23.270 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+18:10:23.270 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Fill pool skipped, pool is at sufficient level.
+18:10:52.977 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+18:10:52.978 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+18:10:52.979 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Fill pool skipped, pool is at sufficient level.
+18:10:53.270 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+18:10:53.271 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+18:10:53.271 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Fill pool skipped, pool is at sufficient level.
+18:11:18.473 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+18:11:22.979 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+18:11:22.979 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+18:11:22.979 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Fill pool skipped, pool is at sufficient level.
+18:11:23.271 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+18:11:23.271 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+18:11:23.272 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Fill pool skipped, pool is at sufficient level.
+18:11:47.919 [springHikariCPAutoCommitFalse connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - springHikariCPAutoCommitFalse - Closing connection com.mysql.cj.jdbc.ConnectionImpl@3e8b693f: (connection has passed maxLifetime)
+18:11:47.931 [springHikariCPAutoCommitFalse connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Added connection com.mysql.cj.jdbc.ConnectionImpl@7aecde05
+18:11:49.194 [springHikariCPAutoCommitTrue connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - springHikariCPAutoCommitTrue - Closing connection com.mysql.cj.jdbc.ConnectionImpl@2b27775f: (connection has passed maxLifetime)
+18:11:49.206 [springHikariCPAutoCommitTrue connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Added connection com.mysql.cj.jdbc.ConnectionImpl@76f52428
+18:11:50.362 [springHikariCPAutoCommitFalse connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - springHikariCPAutoCommitFalse - Closing connection com.mysql.cj.jdbc.ConnectionImpl@7fb66304: (connection has passed maxLifetime)
+18:11:50.373 [springHikariCPAutoCommitFalse connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Added connection com.mysql.cj.jdbc.ConnectionImpl@3bd1d43e
+18:11:52.980 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+18:11:52.980 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+18:11:52.980 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Fill pool skipped, pool is at sufficient level.
+18:11:53.272 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+18:11:53.272 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+18:11:53.272 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Fill pool skipped, pool is at sufficient level.
+18:12:22.980 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+18:12:22.981 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+18:12:22.982 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Fill pool skipped, pool is at sufficient level.
+18:12:23.136 [DiscoveryClient-HeartbeatExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_MAHA-RERA-ADMINISTRATION-SERVICE/backend-administartion-prod:maha-rera-administration-service:9299 - Re-registering apps/MAHA-RERA-ADMINISTRATION-SERVICE
+18:12:23.136 [DiscoveryClient-HeartbeatExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_MAHA-RERA-ADMINISTRATION-SERVICE/backend-administartion-prod:maha-rera-administration-service:9299: registering service...
+18:12:23.140 [DiscoveryClient-HeartbeatExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_MAHA-RERA-ADMINISTRATION-SERVICE/backend-administartion-prod:maha-rera-administration-service:9299 - registration status: 204
+18:12:23.273 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+18:12:23.273 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+18:12:23.273 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Fill pool skipped, pool is at sufficient level.
+18:12:52.982 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+18:12:52.983 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+18:12:52.983 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Fill pool skipped, pool is at sufficient level.
+18:12:53.273 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+18:12:53.274 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+18:12:53.274 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Fill pool skipped, pool is at sufficient level.
+18:12:57.536 [http-nio-9299-exec-4] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@833485686 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('2g6gm',now())
+18:12:57.547 [http-nio-9299-exec-4] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:13:04.034 [http-nio-9299-exec-8] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@1949083214 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('8nh8d',now())
+18:13:04.044 [http-nio-9299-exec-8] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:13:13.737 [http-nio-9299-exec-6] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@1316072399 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('37364',now())
+18:13:13.747 [http-nio-9299-exec-6] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:13:18.192 [http-nio-9299-exec-3] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@1888049073 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('b57er',now())
+18:13:18.201 [http-nio-9299-exec-3] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:13:18.920 [springHikariCPAutoCommitTrue connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - springHikariCPAutoCommitTrue - Closing connection com.mysql.cj.jdbc.ConnectionImpl@62838014: (connection has passed maxLifetime)
+18:13:18.931 [springHikariCPAutoCommitTrue connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Added connection com.mysql.cj.jdbc.ConnectionImpl@2b57e3ab
+18:13:22.983 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+18:13:22.984 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+18:13:22.984 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Fill pool skipped, pool is at sufficient level.
+18:13:23.274 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+18:13:23.274 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+18:13:23.274 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Fill pool skipped, pool is at sufficient level.
+18:13:25.258 [http-nio-9299-exec-5] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@1043781723 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('3d4nn',now())
+18:13:25.269 [http-nio-9299-exec-5] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:13:25.350 [http-nio-9299-exec-2] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@844852784 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('5wg83',now())
+18:13:25.360 [http-nio-9299-exec-2] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:13:27.337 [http-nio-9299-exec-1] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@1413443346 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('wrkm4',now())
+18:13:27.348 [http-nio-9299-exec-1] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:13:28.086 [http-nio-9299-exec-10] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method validateCaptcha
+ps : HikariProxyPreparedStatement@63468678 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: SELECT Captcha_Id,Captcha,Created_Date FROM t_captcha WHERE Captcha_Id=363793 AND Captcha='b57er'
+18:13:28.099 [http-nio-9299-exec-10] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method validateCaptcha
+18:13:30.235 [http-nio-9299-exec-9] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@2042361450 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('h5bxm',now())
+18:13:30.244 [http-nio-9299-exec-9] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:13:33.129 [http-nio-9299-exec-7] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@878765671 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('enfbe',now())
+18:13:33.138 [http-nio-9299-exec-7] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:13:36.557 [http-nio-9299-exec-4] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@91193768 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('wr7ff',now())
+18:13:36.567 [http-nio-9299-exec-4] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:13:43.207 [http-nio-9299-exec-8] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@1089449284 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('4a5pn',now())
+18:13:43.218 [http-nio-9299-exec-8] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:13:52.916 [http-nio-9299-exec-6] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@1504781409 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('cpeyh',now())
+18:13:52.926 [http-nio-9299-exec-6] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:13:52.984 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+18:13:52.985 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+18:13:52.985 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Fill pool skipped, pool is at sufficient level.
+18:13:53.275 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+18:13:53.275 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+18:13:53.275 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Fill pool skipped, pool is at sufficient level.
+18:13:57.124 [http-nio-9299-exec-3] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@286871935 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('ycgwc',now())
+18:13:57.136 [http-nio-9299-exec-3] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:13:57.527 [http-nio-9299-exec-5] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@292067470 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('kx368',now())
+18:13:57.536 [http-nio-9299-exec-5] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+Oracle APM - log directory is /apmprod-fss/oracle-apm-agent/log/backend-administartion-prod_UnresolvedVariable
+Oracle APM - Usable Space: 8796093020679 MB
+Oracle APM - Failed opening the log file [/apmprod-fss/oracle-apm-agent/log/backend-administartion-prod_UnresolvedVariable/AgentErrors.log]
+java.io.FileNotFoundException: /apmprod-fss/oracle-apm-agent/log/backend-administartion-prod_UnresolvedVariable/AgentErrors.log.lck (Permission denied)
+	at java.io.RandomAccessFile.open0(Native Method)
+	at java.io.RandomAccessFile.open(RandomAccessFile.java:316)
+	at java.io.RandomAccessFile.<init>(RandomAccessFile.java:243)
+	at com.oracle.apm.agent.utility.logging.FilePublisher.getExclusiveLogFileAccess(FilePublisher.java:139)
+	at com.oracle.apm.agent.utility.logging.FilePublisher.openFile(FilePublisher.java:94)
+	at com.oracle.apm.agent.utility.logging.FilePublisher.open(FilePublisher.java:82)
+	at com.oracle.apm.agent.utility.logging.FilePublisher.<init>(FilePublisher.java:69)
+	at com.oracle.apm.agent.utility.logging.FileLoggerManager.initializeLogDirectory(FileLoggerManager.java:111)
+	at com.oracle.apm.agent.utility.logging.Logger.initializeLogDirectory(Logger.java:64)
+	at com.oracle.apm.agent.core.AgentInstance.setLogLocation(AgentInstance.java:397)
+	at com.oracle.apm.agent.resource.ResourceCollector$CollectionRunnable.run(ResourceCollector.java:267)
+	at com.oracle.apm.agent.utility.thread.WorkerScheduler$RecurringRunnable.run(WorkerScheduler.java:408)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at com.oracle.apm.agent.utility.pool.ScalableScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScalableScheduledThreadPoolExecutor.java:88)
+	at com.oracle.apm.agent.utility.pool.ScalableScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScalableScheduledThreadPoolExecutor.java:202)
+	at com.oracle.apm.agent.utility.pool.ScalableParentThreadPoolExecutor.runWorker(ScalableParentThreadPoolExecutor.java:887)
+	at com.oracle.apm.agent.utility.pool.ScalableParentThreadPoolExecutor$Worker.run(ScalableParentThreadPoolExecutor.java:353)
+	at java.lang.Thread.run(Thread.java:750)
+Oracle APM - Usable Space: 8796093020679 MB
+Oracle APM - Failed opening the log file [/apmprod-fss/oracle-apm-agent/log/backend-administartion-prod_UnresolvedVariable/Agent.log]
+java.io.FileNotFoundException: /apmprod-fss/oracle-apm-agent/log/backend-administartion-prod_UnresolvedVariable/Agent.log.lck (Permission denied)
+	at java.io.RandomAccessFile.open0(Native Method)
+	at java.io.RandomAccessFile.open(RandomAccessFile.java:316)
+	at java.io.RandomAccessFile.<init>(RandomAccessFile.java:243)
+	at com.oracle.apm.agent.utility.logging.FilePublisher.getExclusiveLogFileAccess(FilePublisher.java:139)
+	at com.oracle.apm.agent.utility.logging.FilePublisher.openFile(FilePublisher.java:94)
+	at com.oracle.apm.agent.utility.logging.FilePublisher.open(FilePublisher.java:82)
+	at com.oracle.apm.agent.utility.logging.FilePublisher.<init>(FilePublisher.java:69)
+	at com.oracle.apm.agent.utility.logging.FileLoggerManager.initializeLogDirectory(FileLoggerManager.java:116)
+	at com.oracle.apm.agent.utility.logging.Logger.initializeLogDirectory(Logger.java:64)
+	at com.oracle.apm.agent.core.AgentInstance.setLogLocation(AgentInstance.java:397)
+	at com.oracle.apm.agent.resource.ResourceCollector$CollectionRunnable.run(ResourceCollector.java:267)
+	at com.oracle.apm.agent.utility.thread.WorkerScheduler$RecurringRunnable.run(WorkerScheduler.java:408)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at com.oracle.apm.agent.utility.pool.ScalableScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScalableScheduledThreadPoolExecutor.java:88)
+	at com.oracle.apm.agent.utility.pool.ScalableScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScalableScheduledThreadPoolExecutor.java:202)
+	at com.oracle.apm.agent.utility.pool.ScalableParentThreadPoolExecutor.runWorker(ScalableParentThreadPoolExecutor.java:887)
+	at com.oracle.apm.agent.utility.pool.ScalableParentThreadPoolExecutor$Worker.run(ScalableParentThreadPoolExecutor.java:353)
+	at java.lang.Thread.run(Thread.java:750)
+Oracle APM - Usable Space: 8796093020679 MB
+Oracle APM - Failed opening the log file [/apmprod-fss/oracle-apm-agent/log/backend-administartion-prod_UnresolvedVariable/AgentStartup.log]
+java.io.FileNotFoundException: /apmprod-fss/oracle-apm-agent/log/backend-administartion-prod_UnresolvedVariable/AgentStartup.log.lck (Permission denied)
+	at java.io.RandomAccessFile.open0(Native Method)
+	at java.io.RandomAccessFile.open(RandomAccessFile.java:316)
+	at java.io.RandomAccessFile.<init>(RandomAccessFile.java:243)
+	at com.oracle.apm.agent.utility.logging.FilePublisher.getExclusiveLogFileAccess(FilePublisher.java:139)
+	at com.oracle.apm.agent.utility.logging.FilePublisher.openFile(FilePublisher.java:94)
+	at com.oracle.apm.agent.utility.logging.FilePublisher.open(FilePublisher.java:82)
+	at com.oracle.apm.agent.utility.logging.FilePublisher.<init>(FilePublisher.java:69)
+	at com.oracle.apm.agent.utility.logging.FileLoggerManager.initializeLogDirectory(FileLoggerManager.java:120)
+	at com.oracle.apm.agent.utility.logging.Logger.initializeLogDirectory(Logger.java:64)
+	at com.oracle.apm.agent.core.AgentInstance.setLogLocation(AgentInstance.java:397)
+	at com.oracle.apm.agent.resource.ResourceCollector$CollectionRunnable.run(ResourceCollector.java:267)
+	at com.oracle.apm.agent.utility.thread.WorkerScheduler$RecurringRunnable.run(WorkerScheduler.java:408)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at com.oracle.apm.agent.utility.pool.ScalableScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScalableScheduledThreadPoolExecutor.java:88)
+	at com.oracle.apm.agent.utility.pool.ScalableScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScalableScheduledThreadPoolExecutor.java:202)
+	at com.oracle.apm.agent.utility.pool.ScalableParentThreadPoolExecutor.runWorker(ScalableParentThreadPoolExecutor.java:887)
+	at com.oracle.apm.agent.utility.pool.ScalableParentThreadPoolExecutor$Worker.run(ScalableParentThreadPoolExecutor.java:353)
+	at java.lang.Thread.run(Thread.java:750)
+Oracle APM - Usable Space: 8796093020679 MB
+Oracle APM - Failed opening the log file [/apmprod-fss/oracle-apm-agent/log/backend-administartion-prod_UnresolvedVariable/AgentStatus.log]
+java.io.FileNotFoundException: /apmprod-fss/oracle-apm-agent/log/backend-administartion-prod_UnresolvedVariable/AgentStatus.log.lck (Permission denied)
+	at java.io.RandomAccessFile.open0(Native Method)
+	at java.io.RandomAccessFile.open(RandomAccessFile.java:316)
+	at java.io.RandomAccessFile.<init>(RandomAccessFile.java:243)
+	at com.oracle.apm.agent.utility.logging.FilePublisher.getExclusiveLogFileAccess(FilePublisher.java:139)
+	at com.oracle.apm.agent.utility.logging.FilePublisher.openFile(FilePublisher.java:94)
+	at com.oracle.apm.agent.utility.logging.FilePublisher.open(FilePublisher.java:82)
+	at com.oracle.apm.agent.utility.logging.FilePublisher.<init>(FilePublisher.java:69)
+	at com.oracle.apm.agent.utility.logging.FileLoggerManager.initializeLogDirectory(FileLoggerManager.java:121)
+	at com.oracle.apm.agent.utility.logging.Logger.initializeLogDirectory(Logger.java:64)
+	at com.oracle.apm.agent.core.AgentInstance.setLogLocation(AgentInstance.java:397)
+	at com.oracle.apm.agent.resource.ResourceCollector$CollectionRunnable.run(ResourceCollector.java:267)
+	at com.oracle.apm.agent.utility.thread.WorkerScheduler$RecurringRunnable.run(WorkerScheduler.java:408)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at com.oracle.apm.agent.utility.pool.ScalableScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScalableScheduledThreadPoolExecutor.java:88)
+	at com.oracle.apm.agent.utility.pool.ScalableScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScalableScheduledThreadPoolExecutor.java:202)
+	at com.oracle.apm.agent.utility.pool.ScalableParentThreadPoolExecutor.runWorker(ScalableParentThreadPoolExecutor.java:887)
+	at com.oracle.apm.agent.utility.pool.ScalableParentThreadPoolExecutor$Worker.run(ScalableParentThreadPoolExecutor.java:353)
+	at java.lang.Thread.run(Thread.java:750)
+18:14:07.854 [http-nio-9299-exec-2] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@629364598 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('57hhc',now())
+18:14:07.864 [http-nio-9299-exec-2] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:14:15.518 [http-nio-9299-exec-1] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@1932611878 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('mwwhy',now())
+18:14:15.530 [http-nio-9299-exec-1] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:14:15.556 [http-nio-9299-exec-10] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method validateCaptcha
+ps : HikariProxyPreparedStatement@1333500902 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: SELECT Captcha_Id,Captcha,Created_Date FROM t_captcha WHERE Captcha_Id=363799 AND Captcha='wr7ff'
+18:14:15.560 [http-nio-9299-exec-10] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method validateCaptcha
+18:14:22.985 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+18:14:22.986 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+18:14:22.986 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Fill pool skipped, pool is at sufficient level.
+18:14:23.275 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+18:14:23.276 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+18:14:23.276 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Fill pool skipped, pool is at sufficient level.
+18:14:24.040 [http-nio-9299-exec-9] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@1142911105 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('nb7ce',now())
+18:14:24.050 [http-nio-9299-exec-9] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:14:25.248 [http-nio-9299-exec-7] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@1393632792 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('g4ern',now())
+18:14:25.256 [http-nio-9299-exec-4] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+18:14:25.257 [http-nio-9299-exec-7] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:14:25.261 [http-nio-9299-exec-8] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@513804503 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('5xy4y',now())
+18:14:25.265 [http-nio-9299-exec-4] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+ps : HikariProxyPreparedStatement@1186990921 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('a3c7f',now())
+18:14:25.268 [http-nio-9299-exec-8] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:14:38.581 [http-nio-9299-exec-3] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+18:14:38.581 [http-nio-9299-exec-6] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@332397840 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('8pkyr',now())
+ps : HikariProxyPreparedStatement@1461083410 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('5ygwy',now())
+18:14:38.592 [http-nio-9299-exec-6] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:14:38.593 [http-nio-9299-exec-3] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:14:45.473 [springHikariCPAutoCommitFalse connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - springHikariCPAutoCommitFalse - Closing connection com.mysql.cj.jdbc.ConnectionImpl@7aecde05: (connection has passed maxLifetime)
+18:14:45.488 [springHikariCPAutoCommitFalse connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Added connection com.mysql.cj.jdbc.ConnectionImpl@757bb2a6
+18:14:46.531 [springHikariCPAutoCommitFalse connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - springHikariCPAutoCommitFalse - Closing connection com.mysql.cj.jdbc.ConnectionImpl@3bd1d43e: (connection has passed maxLifetime)
+18:14:46.544 [springHikariCPAutoCommitFalse connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Added connection com.mysql.cj.jdbc.ConnectionImpl@63a5c6ed
+18:14:46.591 [http-nio-9299-exec-5] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@268400863 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('wyn8w',now())
+18:14:46.602 [http-nio-9299-exec-5] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:14:47.767 [http-nio-9299-exec-2] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method validateCaptcha
+ps : HikariProxyPreparedStatement@932481873 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: SELECT Captcha_Id,Captcha,Created_Date FROM t_captcha WHERE Captcha_Id=363795 AND Captcha='5wg83'
+18:14:47.773 [http-nio-9299-exec-2] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method validateCaptcha
+18:14:48.559 [springHikariCPAutoCommitTrue connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - springHikariCPAutoCommitTrue - Closing connection com.mysql.cj.jdbc.ConnectionImpl@76f52428: (connection has passed maxLifetime)
+18:14:48.571 [springHikariCPAutoCommitTrue connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Added connection com.mysql.cj.jdbc.ConnectionImpl@18cc9cbe
+18:14:52.986 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+18:14:52.987 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+18:14:52.987 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Fill pool skipped, pool is at sufficient level.
+18:14:53.276 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+18:14:53.276 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+18:14:53.276 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Fill pool skipped, pool is at sufficient level.
+18:14:57.533 [http-nio-9299-exec-1] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@517872221 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('rnexc',now())
+18:14:57.543 [http-nio-9299-exec-1] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:15:04.043 [http-nio-9299-exec-10] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@1923718776 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('n6frc',now())
+18:15:04.052 [http-nio-9299-exec-10] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:15:13.739 [http-nio-9299-exec-9] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@1293332896 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('nmcc8',now())
+18:15:13.749 [http-nio-9299-exec-9] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:15:20.121 [http-nio-9299-exec-7] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@1636415695 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('nbcx6',now())
+18:15:20.130 [http-nio-9299-exec-7] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:15:22.987 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+18:15:22.987 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+18:15:22.987 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Fill pool skipped, pool is at sufficient level.
+18:15:23.277 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+18:15:23.277 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+18:15:23.277 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Fill pool skipped, pool is at sufficient level.
+18:15:25.251 [http-nio-9299-exec-4] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@1669221533 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('7k8r2',now())
+18:15:25.261 [http-nio-9299-exec-4] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:15:30.240 [http-nio-9299-exec-8] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@1831913386 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('wfa6w',now())
+18:15:30.251 [http-nio-9299-exec-8] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:15:33.118 [http-nio-9299-exec-6] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@941867631 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('d3nff',now())
+18:15:33.127 [http-nio-9299-exec-6] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:15:33.813 [http-nio-9299-exec-3] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@1226580397 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('rcc3m',now())
+18:15:33.822 [http-nio-9299-exec-3] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:15:43.204 [http-nio-9299-exec-2] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@1276426861 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('rk6gx',now())
+18:15:43.215 [http-nio-9299-exec-2] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:15:52.988 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+18:15:52.988 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+18:15:52.989 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Fill pool skipped, pool is at sufficient level.
+18:15:53.025 [http-nio-9299-exec-1] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@536771980 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('yf25f',now())
+18:15:53.034 [http-nio-9299-exec-1] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:15:53.277 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+18:15:53.278 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+18:15:53.278 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Fill pool skipped, pool is at sufficient level.
+18:15:57.526 [http-nio-9299-exec-10] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@1639715696 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('c67fx',now())
+18:15:57.537 [http-nio-9299-exec-10] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:16:07.881 [http-nio-9299-exec-9] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@2091990816 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('bdbmn',now())
+18:16:07.889 [http-nio-9299-exec-9] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:16:15.277 [springHikariCPAutoCommitTrue connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - springHikariCPAutoCommitTrue - Closing connection com.mysql.cj.jdbc.ConnectionImpl@2b57e3ab: (connection has passed maxLifetime)
+18:16:15.287 [springHikariCPAutoCommitTrue connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Added connection com.mysql.cj.jdbc.ConnectionImpl@5be2a374
+18:16:15.514 [http-nio-9299-exec-7] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@591545706 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('kfawd',now())
+18:16:15.526 [http-nio-9299-exec-7] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:16:18.474 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+18:16:22.989 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+18:16:22.989 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+18:16:22.990 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Fill pool skipped, pool is at sufficient level.
+18:16:23.278 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+18:16:23.278 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+18:16:23.278 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Fill pool skipped, pool is at sufficient level.
+18:16:24.092 [http-nio-9299-exec-4] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@1475315853 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('rkc7b',now())
+18:16:24.102 [http-nio-9299-exec-4] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:16:25.259 [http-nio-9299-exec-8] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+18:16:25.260 [http-nio-9299-exec-3] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+18:16:25.260 [http-nio-9299-exec-6] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@249329403 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('efd6y',now())
+ps : HikariProxyPreparedStatement@1374967172 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('gm34h',now())
+18:16:25.269 [http-nio-9299-exec-8] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+ps : HikariProxyPreparedStatement@810813896 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('wg3aa',now())
+18:16:25.272 [http-nio-9299-exec-6] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:16:25.273 [http-nio-9299-exec-3] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:16:25.279 [springHikariCPAutoCommitTrue connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Added connection com.mysql.cj.jdbc.ConnectionImpl@4343c30d
+18:16:38.576 [http-nio-9299-exec-5] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@17096510 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('gwa48',now())
+18:16:38.588 [http-nio-9299-exec-5] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:16:38.589 [http-nio-9299-exec-2] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@1517124205 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('cb8c2',now())
+18:16:38.597 [http-nio-9299-exec-2] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:16:39.337 [http-nio-9299-exec-1] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@1063883304 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('8n8rc',now())
+18:16:39.346 [http-nio-9299-exec-1] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:16:52.990 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+18:16:52.991 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+18:16:52.991 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Fill pool skipped, pool is at sufficient level.
+18:16:53.279 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Before cleanup stats (total=3, active=0, idle=3, waiting=0)
+18:16:53.279 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - After cleanup  stats (total=3, active=0, idle=3, waiting=0)
+18:16:53.279 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Fill pool skipped, pool is at sufficient level.
+18:16:57.538 [http-nio-9299-exec-10] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@385143391 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('n6mhy',now())
+18:16:57.548 [http-nio-9299-exec-10] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:17:04.047 [http-nio-9299-exec-9] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@1609708469 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('g8k8k',now())
+18:17:04.056 [http-nio-9299-exec-9] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:17:13.739 [http-nio-9299-exec-7] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@884016674 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('6fw8c',now())
+18:17:13.750 [http-nio-9299-exec-7] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:17:20.125 [http-nio-9299-exec-4] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@1594400355 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('2hfcf',now())
+18:17:20.133 [http-nio-9299-exec-4] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:17:22.991 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+18:17:22.992 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+18:17:22.992 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Fill pool skipped, pool is at sufficient level.
+18:17:23.279 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Before cleanup stats (total=3, active=0, idle=3, waiting=0)
+18:17:23.280 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - After cleanup  stats (total=3, active=0, idle=3, waiting=0)
+18:17:23.280 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Fill pool skipped, pool is at sufficient level.
+18:17:25.254 [http-nio-9299-exec-8] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@2127256315 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('byw5g',now())
+18:17:25.265 [http-nio-9299-exec-8] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:17:30.236 [http-nio-9299-exec-3] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@330487597 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('5yndc',now())
+18:17:30.246 [http-nio-9299-exec-3] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:17:33.125 [http-nio-9299-exec-5] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@1664604414 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('6dga8',now())
+18:17:33.135 [http-nio-9299-exec-5] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:17:41.888 [springHikariCPAutoCommitFalse connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - springHikariCPAutoCommitFalse - Closing connection com.mysql.cj.jdbc.ConnectionImpl@757bb2a6: (connection has passed maxLifetime)
+18:17:41.899 [springHikariCPAutoCommitFalse connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Added connection com.mysql.cj.jdbc.ConnectionImpl@63ca257
+18:17:43.199 [http-nio-9299-exec-1] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@30230877 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('4nmdc',now())
+18:17:43.208 [http-nio-9299-exec-1] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:17:44.407 [springHikariCPAutoCommitFalse connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - springHikariCPAutoCommitFalse - Closing connection com.mysql.cj.jdbc.ConnectionImpl@63a5c6ed: (connection has passed maxLifetime)
+18:17:44.417 [springHikariCPAutoCommitFalse connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Added connection com.mysql.cj.jdbc.ConnectionImpl@4701a86c
+18:17:44.806 [springHikariCPAutoCommitTrue connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - springHikariCPAutoCommitTrue - Closing connection com.mysql.cj.jdbc.ConnectionImpl@18cc9cbe: (connection has passed maxLifetime)
+18:17:44.807 [springHikariCPAutoCommitTrue connection closer] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Fill pool skipped, pool is at sufficient level.
+18:17:52.907 [http-nio-9299-exec-10] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@1081846949 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('gmcx4',now())
+18:17:52.918 [http-nio-9299-exec-10] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:17:52.992 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+18:17:52.992 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+18:17:52.993 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Fill pool skipped, pool is at sufficient level.
+18:17:53.280 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+18:17:53.280 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+18:17:53.280 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Fill pool skipped, pool is at sufficient level.
+18:17:57.537 [http-nio-9299-exec-9] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@1587241646 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('2xcer',now())
+18:17:57.546 [http-nio-9299-exec-9] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:18:07.859 [http-nio-9299-exec-7] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@970702643 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('ec5ha',now())
+18:18:07.868 [http-nio-9299-exec-7] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:18:15.513 [http-nio-9299-exec-4] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@1463029169 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('f73b6',now())
+18:18:15.522 [http-nio-9299-exec-4] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:18:20.544 [http-nio-9299-exec-8] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@2042008526 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('h2c52',now())
+18:18:20.553 [http-nio-9299-exec-8] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:18:22.993 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+18:18:22.993 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+18:18:22.993 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Fill pool skipped, pool is at sufficient level.
+18:18:23.281 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+18:18:23.281 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+18:18:23.281 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Fill pool skipped, pool is at sufficient level.
+18:18:24.096 [http-nio-9299-exec-6] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@575222137 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('8ch28',now())
+18:18:24.105 [http-nio-9299-exec-6] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:18:25.263 [http-nio-9299-exec-3] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+18:18:25.263 [http-nio-9299-exec-5] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+18:18:25.263 [http-nio-9299-exec-2] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@175642076 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('a5k4h',now())
+ps : HikariProxyPreparedStatement@470606620 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('3hc8b',now())
+18:18:25.273 [http-nio-9299-exec-5] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+ps : HikariProxyPreparedStatement@2072902441 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('8wfgp',now())
+18:18:25.274 [http-nio-9299-exec-2] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:18:25.276 [http-nio-9299-exec-3] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:18:25.280 [springHikariCPAutoCommitTrue connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Added connection com.mysql.cj.jdbc.ConnectionImpl@51e52625
+18:18:38.584 [http-nio-9299-exec-1] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+18:18:38.584 [http-nio-9299-exec-10] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@1719263003 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('r5dc8',now())
+ps : HikariProxyPreparedStatement@1532043358 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('af4mk',now())
+18:18:38.593 [http-nio-9299-exec-1] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:18:38.594 [http-nio-9299-exec-10] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:18:39.270 [http-nio-9299-exec-9] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method validateCaptcha
+ps : HikariProxyPreparedStatement@1224233000 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: SELECT Captcha_Id,Captcha,Created_Date FROM t_captcha WHERE Captcha_Id=363845 AND Captcha='h2c52'
+18:18:39.275 [http-nio-9299-exec-9] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method validateCaptcha
+18:18:52.993 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+18:18:52.994 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+18:18:52.994 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Fill pool skipped, pool is at sufficient level.
+18:18:53.281 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Before cleanup stats (total=3, active=0, idle=3, waiting=0)
+18:18:53.282 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - After cleanup  stats (total=3, active=0, idle=3, waiting=0)
+18:18:53.282 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Fill pool skipped, pool is at sufficient level.
+18:18:57.536 [http-nio-9299-exec-7] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@631004679 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('fgefy',now())
+18:18:57.552 [http-nio-9299-exec-7] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:19:04.066 [http-nio-9299-exec-4] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@899705891 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('7pncp',now())
+18:19:04.075 [http-nio-9299-exec-4] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:19:12.898 [springHikariCPAutoCommitTrue connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - springHikariCPAutoCommitTrue - Closing connection com.mysql.cj.jdbc.ConnectionImpl@5be2a374: (connection has passed maxLifetime)
+18:19:12.900 [springHikariCPAutoCommitTrue connection closer] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Fill pool skipped, pool is at sufficient level.
+18:19:13.747 [http-nio-9299-exec-8] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@1344511386 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('g4867',now())
+18:19:13.758 [http-nio-9299-exec-8] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:19:20.145 [http-nio-9299-exec-6] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@1434306176 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('g7daw',now())
+18:19:20.156 [http-nio-9299-exec-6] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:19:22.120 [springHikariCPAutoCommitTrue connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - springHikariCPAutoCommitTrue - Closing connection com.mysql.cj.jdbc.ConnectionImpl@4343c30d: (connection has passed maxLifetime)
+18:19:22.130 [springHikariCPAutoCommitTrue connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Added connection com.mysql.cj.jdbc.ConnectionImpl@72fc03c6
+18:19:22.995 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+18:19:22.995 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+18:19:22.995 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Fill pool skipped, pool is at sufficient level.
+18:19:23.282 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+18:19:23.282 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+18:19:23.282 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Fill pool skipped, pool is at sufficient level.
+18:19:25.266 [http-nio-9299-exec-5] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@761738263 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('2hw86',now())
+18:19:25.277 [http-nio-9299-exec-5] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:19:27.346 [http-nio-9299-exec-3] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@1065273877 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('k7m8p',now())
+18:19:27.356 [http-nio-9299-exec-3] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:19:30.232 [http-nio-9299-exec-1] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@777091351 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('bgxkk',now())
+18:19:30.242 [http-nio-9299-exec-1] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:19:33.130 [http-nio-9299-exec-10] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@1813733780 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('yar35',now())
+18:19:33.139 [http-nio-9299-exec-10] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:19:39.856 [http-nio-9299-exec-7] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@2087126893 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('dhymk',now())
+18:19:39.865 [http-nio-9299-exec-7] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:19:43.210 [http-nio-9299-exec-4] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@1273888141 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('da5wr',now())
+18:19:43.221 [http-nio-9299-exec-4] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:19:52.924 [http-nio-9299-exec-8] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@1360531009 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('h7nmp',now())
+18:19:52.933 [http-nio-9299-exec-8] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:19:52.995 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+18:19:52.996 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+18:19:52.996 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Fill pool skipped, pool is at sufficient level.
+18:19:53.283 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+18:19:53.283 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+18:19:53.283 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Fill pool skipped, pool is at sufficient level.
+18:19:57.541 [http-nio-9299-exec-6] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@1199941314 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('48xmw',now())
+18:19:57.552 [http-nio-9299-exec-6] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:20:15.503 [http-nio-9299-exec-5] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@1417058212 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('4hwky',now())
+18:20:15.515 [http-nio-9299-exec-5] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:20:22.996 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+18:20:22.996 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+18:20:22.997 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Fill pool skipped, pool is at sufficient level.
+18:20:23.283 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+18:20:23.284 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+18:20:23.284 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Fill pool skipped, pool is at sufficient level.
+18:20:24.232 [http-nio-9299-exec-2] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@511563894 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('p7f4y',now())
+18:20:24.242 [http-nio-9299-exec-2] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:20:25.262 [http-nio-9299-exec-3] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@346302496 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('d5a8e',now())
+18:20:25.270 [http-nio-9299-exec-1] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+18:20:25.271 [http-nio-9299-exec-3] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:20:25.275 [http-nio-9299-exec-10] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@1992960933 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('2dwby',now())
+18:20:25.279 [http-nio-9299-exec-1] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+ps : HikariProxyPreparedStatement@1381600669 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('bbcxc',now())
+18:20:25.282 [http-nio-9299-exec-10] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:20:34.104 [http-nio-9299-exec-9] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@167906204 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('88r6y',now())
+18:20:34.115 [http-nio-9299-exec-9] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:20:38.581 [http-nio-9299-exec-7] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+18:20:38.586 [http-nio-9299-exec-4] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@311090291 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('y57bd',now())
+18:20:38.592 [http-nio-9299-exec-7] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+ps : HikariProxyPreparedStatement@1861461215 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('cd7mk',now())
+18:20:38.596 [http-nio-9299-exec-4] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:20:40.357 [springHikariCPAutoCommitFalse connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - springHikariCPAutoCommitFalse - Closing connection com.mysql.cj.jdbc.ConnectionImpl@63ca257: (connection has passed maxLifetime)
+18:20:40.367 [springHikariCPAutoCommitFalse connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Added connection com.mysql.cj.jdbc.ConnectionImpl@2d01e35a
+18:20:40.477 [springHikariCPAutoCommitFalse connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - springHikariCPAutoCommitFalse - Closing connection com.mysql.cj.jdbc.ConnectionImpl@4701a86c: (connection has passed maxLifetime)
+18:20:40.486 [springHikariCPAutoCommitFalse connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Added connection com.mysql.cj.jdbc.ConnectionImpl@6c3ce961
+18:20:52.997 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+18:20:52.998 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+18:20:52.998 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Fill pool skipped, pool is at sufficient level.
+18:20:53.284 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+18:20:53.285 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+18:20:53.285 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Fill pool skipped, pool is at sufficient level.
+18:20:57.539 [http-nio-9299-exec-8] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@38142881 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('4gn4p',now())
+18:20:57.549 [http-nio-9299-exec-8] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:21:04.073 [http-nio-9299-exec-6] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@457690972 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('3564d',now())
+18:21:04.083 [http-nio-9299-exec-6] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:21:13.757 [http-nio-9299-exec-5] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@89176571 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('8gwna',now())
+18:21:13.768 [http-nio-9299-exec-5] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:21:18.474 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+18:21:20.126 [http-nio-9299-exec-2] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@1878930904 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('ny85h',now())
+18:21:20.136 [http-nio-9299-exec-2] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:21:22.998 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+18:21:22.998 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+18:21:22.998 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Fill pool skipped, pool is at sufficient level.
+18:21:23.285 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+18:21:23.285 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+18:21:23.285 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Fill pool skipped, pool is at sufficient level.
+18:21:24.409 [springHikariCPAutoCommitTrue connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - springHikariCPAutoCommitTrue - Closing connection com.mysql.cj.jdbc.ConnectionImpl@51e52625: (connection has passed maxLifetime)
+18:21:24.420 [springHikariCPAutoCommitTrue connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Added connection com.mysql.cj.jdbc.ConnectionImpl@1768a3e1
+18:21:25.254 [http-nio-9299-exec-3] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@1465837234 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('64x3d',now())
+18:21:25.265 [http-nio-9299-exec-3] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:21:27.336 [http-nio-9299-exec-1] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@605328769 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('cfmm3',now())
+18:21:27.346 [http-nio-9299-exec-1] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:21:30.245 [http-nio-9299-exec-10] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@397349543 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('pp42d',now())
+18:21:30.254 [http-nio-9299-exec-10] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:21:33.130 [http-nio-9299-exec-9] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@659728878 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('ahhc3',now())
+18:21:33.138 [http-nio-9299-exec-9] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:21:33.707 [http-nio-9299-exec-7] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@2047709991 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('kwha2',now())
+18:21:33.717 [http-nio-9299-exec-7] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:21:43.216 [http-nio-9299-exec-8] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@1227245222 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('6w3x3',now())
+18:21:43.228 [http-nio-9299-exec-8] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:21:52.999 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+18:21:52.999 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+18:21:52.999 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Fill pool skipped, pool is at sufficient level.
+18:21:53.230 [http-nio-9299-exec-6] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@229135154 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('p5fer',now())
+18:21:53.239 [http-nio-9299-exec-6] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:21:53.286 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+18:21:53.286 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+18:21:53.286 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Fill pool skipped, pool is at sufficient level.
+18:21:57.535 [http-nio-9299-exec-5] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@956188275 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('endgw',now())
+18:21:57.545 [http-nio-9299-exec-5] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:22:07.863 [http-nio-9299-exec-2] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@445255118 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('y4gw7',now())
+18:22:07.874 [http-nio-9299-exec-2] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:22:15.501 [http-nio-9299-exec-3] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@1525342342 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('x5mnw',now())
+18:22:15.512 [http-nio-9299-exec-3] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:22:21.665 [springHikariCPAutoCommitTrue connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - springHikariCPAutoCommitTrue - Closing connection com.mysql.cj.jdbc.ConnectionImpl@72fc03c6: (connection has passed maxLifetime)
+18:22:21.674 [springHikariCPAutoCommitTrue connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Added connection com.mysql.cj.jdbc.ConnectionImpl@3a10a4b8
+18:22:23.000 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+18:22:23.000 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+18:22:23.000 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Fill pool skipped, pool is at sufficient level.
+18:22:23.286 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+18:22:23.287 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+18:22:23.287 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Fill pool skipped, pool is at sufficient level.
+18:22:24.498 [http-nio-9299-exec-1] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@26062885 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('efm3m',now())
+18:22:24.507 [http-nio-9299-exec-1] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:22:25.260 [http-nio-9299-exec-10] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+18:22:25.260 [http-nio-9299-exec-7] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+18:22:25.261 [http-nio-9299-exec-9] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@1783686301 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('fegd6',now())
+ps : HikariProxyPreparedStatement@1515994462 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('8b2ye',now())
+18:22:25.271 [http-nio-9299-exec-7] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+ps : HikariProxyPreparedStatement@155556577 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('kdkym',now())
+18:22:25.272 [http-nio-9299-exec-10] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:22:25.274 [http-nio-9299-exec-9] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:22:25.279 [springHikariCPAutoCommitTrue connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Added connection com.mysql.cj.jdbc.ConnectionImpl@7b2dae83
+18:22:35.081 [http-nio-9299-exec-4] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@646010384 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('mg3fa',now())
+18:22:35.090 [http-nio-9299-exec-4] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:22:38.574 [http-nio-9299-exec-8] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+18:22:38.575 [http-nio-9299-exec-6] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@1465419042 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('kwmyg',now())
+ps : HikariProxyPreparedStatement@1525252230 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('wnxdd',now())
+18:22:38.584 [http-nio-9299-exec-8] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:22:38.586 [http-nio-9299-exec-6] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:22:38.965 [http-nio-9299-exec-5] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@111026468 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('kkke3',now())
+18:22:38.972 [http-nio-9299-exec-5] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:22:53.000 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+18:22:53.001 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+18:22:53.001 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Fill pool skipped, pool is at sufficient level.
+18:22:53.287 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Before cleanup stats (total=3, active=0, idle=3, waiting=0)
+18:22:53.287 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - After cleanup  stats (total=3, active=0, idle=3, waiting=0)
+18:22:53.287 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Fill pool skipped, pool is at sufficient level.
+18:22:57.571 [http-nio-9299-exec-2] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method validateCaptcha
+ps : HikariProxyPreparedStatement@1407166712 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: SELECT Captcha_Id,Captcha,Created_Date FROM t_captcha WHERE Captcha_Id=363885 AND Captcha='x5mnw'
+18:22:57.576 [http-nio-9299-exec-2] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method validateCaptcha
+18:23:04.090 [http-nio-9299-exec-3] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@215571565 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('88yh8',now())
+18:23:04.101 [http-nio-9299-exec-3] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:23:13.748 [http-nio-9299-exec-1] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@130022081 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('b6cb2',now())
+18:23:13.757 [http-nio-9299-exec-1] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:23:20.135 [http-nio-9299-exec-7] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@121230315 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('wd26d',now())
+18:23:20.146 [http-nio-9299-exec-7] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:23:23.001 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+18:23:23.002 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+18:23:23.002 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Fill pool skipped, pool is at sufficient level.
+18:23:23.287 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Before cleanup stats (total=3, active=0, idle=3, waiting=0)
+18:23:23.288 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - After cleanup  stats (total=3, active=0, idle=3, waiting=0)
+18:23:23.288 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Fill pool skipped, pool is at sufficient level.
+18:23:25.269 [http-nio-9299-exec-10] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@533099868 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('rbngh',now())
+18:23:25.277 [http-nio-9299-exec-10] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:23:30.237 [http-nio-9299-exec-4] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@1013342719 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('fxnfb',now())
+18:23:30.245 [http-nio-9299-exec-4] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:23:33.134 [http-nio-9299-exec-8] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@458943820 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('kcew2',now())
+18:23:33.143 [http-nio-9299-exec-8] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:23:36.842 [springHikariCPAutoCommitFalse connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - springHikariCPAutoCommitFalse - Closing connection com.mysql.cj.jdbc.ConnectionImpl@6c3ce961: (connection has passed maxLifetime)
+18:23:36.852 [springHikariCPAutoCommitFalse connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Added connection com.mysql.cj.jdbc.ConnectionImpl@78946ce
+18:23:39.334 [springHikariCPAutoCommitFalse connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - springHikariCPAutoCommitFalse - Closing connection com.mysql.cj.jdbc.ConnectionImpl@2d01e35a: (connection has passed maxLifetime)
+18:23:39.344 [springHikariCPAutoCommitFalse connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Added connection com.mysql.cj.jdbc.ConnectionImpl@46b44cf5
+18:23:39.848 [http-nio-9299-exec-5] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@1046002937 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('65h24',now())
+18:23:39.858 [http-nio-9299-exec-5] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:23:43.209 [http-nio-9299-exec-2] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@542536207 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('bnerg',now())
+18:23:43.218 [http-nio-9299-exec-2] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:23:52.894 [http-nio-9299-exec-3] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@86510201 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('87mn4',now())
+18:23:52.904 [http-nio-9299-exec-3] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:23:53.002 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+18:23:53.002 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+18:23:53.002 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Fill pool skipped, pool is at sufficient level.
+18:23:53.288 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Before cleanup stats (total=3, active=0, idle=3, waiting=0)
+18:23:53.289 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+18:23:53.289 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Fill pool skipped, pool is at sufficient level.
+18:23:53.289 [springHikariCPAutoCommitTrue connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - springHikariCPAutoCommitTrue - Closing connection com.mysql.cj.jdbc.ConnectionImpl@7b2dae83: (connection has passed idleTimeout)
+18:23:53.290 [springHikariCPAutoCommitTrue connection closer] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Fill pool skipped, pool is at sufficient level.
+18:24:21.109 [springHikariCPAutoCommitTrue connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - springHikariCPAutoCommitTrue - Closing connection com.mysql.cj.jdbc.ConnectionImpl@1768a3e1: (connection has passed maxLifetime)
+18:24:21.120 [springHikariCPAutoCommitTrue connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Added connection com.mysql.cj.jdbc.ConnectionImpl@18e02e6f
+18:24:23.002 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+18:24:23.003 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+18:24:23.003 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Fill pool skipped, pool is at sufficient level.
+18:24:23.289 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+18:24:23.289 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+18:24:23.289 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Fill pool skipped, pool is at sufficient level.
+18:24:24.518 [http-nio-9299-exec-1] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@1995830328 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('72w27',now())
+18:24:24.528 [http-nio-9299-exec-1] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:24:25.260 [http-nio-9299-exec-7] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+18:24:25.262 [http-nio-9299-exec-9] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+18:24:25.262 [http-nio-9299-exec-10] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@377957774 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('kx7bm',now())
+18:24:25.270 [http-nio-9299-exec-7] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+ps : HikariProxyPreparedStatement@225101173 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('e6drf',now())
+ps : HikariProxyPreparedStatement@1692372211 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('y3pr5',now())
+18:24:25.272 [http-nio-9299-exec-9] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:24:25.273 [http-nio-9299-exec-10] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:24:25.280 [springHikariCPAutoCommitTrue connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Added connection com.mysql.cj.jdbc.ConnectionImpl@59dd2454
+18:24:35.064 [http-nio-9299-exec-4] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@150863235 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('5cfmr',now())
+18:24:35.073 [http-nio-9299-exec-4] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:24:38.578 [http-nio-9299-exec-6] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+18:24:38.578 [http-nio-9299-exec-8] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@2008047329 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('f8kn7',now())
+ps : HikariProxyPreparedStatement@2038452149 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('fmxwa',now())
+18:24:38.587 [http-nio-9299-exec-6] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:24:38.588 [http-nio-9299-exec-8] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:24:38.979 [http-nio-9299-exec-5] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@1645235632 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('6gm43',now())
+18:24:38.995 [http-nio-9299-exec-5] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:24:53.003 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+18:24:53.004 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+18:24:53.004 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Fill pool skipped, pool is at sufficient level.
+18:24:53.290 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Before cleanup stats (total=3, active=0, idle=3, waiting=0)
+18:24:53.290 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - After cleanup  stats (total=3, active=0, idle=3, waiting=0)
+18:24:53.290 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Fill pool skipped, pool is at sufficient level.
+18:24:56.086 [http-nio-9299-exec-2] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@418392079 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('7k7ak',now())
+18:24:56.096 [http-nio-9299-exec-2] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:25:04.102 [http-nio-9299-exec-3] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@1715883473 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('kpmck',now())
+18:25:04.112 [http-nio-9299-exec-3] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:25:06.114 [http-nio-9299-exec-1] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method validateCaptcha
+ps : HikariProxyPreparedStatement@1236692726 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: SELECT Captcha_Id,Captcha,Created_Date FROM t_captcha WHERE Captcha_Id=363911 AND Captcha='7k7ak'
+18:25:06.119 [http-nio-9299-exec-1] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method validateCaptcha
+18:25:13.748 [http-nio-9299-exec-7] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@509497675 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('y53dk',now())
+18:25:13.759 [http-nio-9299-exec-7] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:25:20.131 [http-nio-9299-exec-9] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@2046197435 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('hdc5m',now())
+18:25:20.140 [http-nio-9299-exec-9] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:25:20.244 [springHikariCPAutoCommitTrue connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - springHikariCPAutoCommitTrue - Closing connection com.mysql.cj.jdbc.ConnectionImpl@3a10a4b8: (connection has passed maxLifetime)
+18:25:20.263 [springHikariCPAutoCommitTrue connection closer] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Fill pool skipped, pool is at sufficient level.
+18:25:23.005 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+18:25:23.005 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+18:25:23.005 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Fill pool skipped, pool is at sufficient level.
+18:25:23.290 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+18:25:23.291 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+18:25:23.291 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Fill pool skipped, pool is at sufficient level.
+18:25:25.270 [http-nio-9299-exec-10] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@337499044 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('emne5',now())
+18:25:25.278 [http-nio-9299-exec-10] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:25:30.693 [http-nio-9299-exec-6] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@542172383 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('a7yea',now())
+18:25:30.703 [http-nio-9299-exec-6] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:25:33.137 [http-nio-9299-exec-8] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@260063105 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('n7p4n',now())
+18:25:33.145 [http-nio-9299-exec-8] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:25:39.858 [http-nio-9299-exec-2] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@436430995 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('3h827',now())
+18:25:39.868 [http-nio-9299-exec-2] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:25:43.209 [http-nio-9299-exec-3] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@1152872759 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('b4e32',now())
+18:25:43.219 [http-nio-9299-exec-3] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:25:52.924 [http-nio-9299-exec-1] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@840986849 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('acchn',now())
+18:25:52.933 [http-nio-9299-exec-1] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:25:53.005 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+18:25:53.006 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+18:25:53.006 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Fill pool skipped, pool is at sufficient level.
+18:25:53.291 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+18:25:53.291 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+18:25:53.291 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Fill pool skipped, pool is at sufficient level.
+18:26:15.584 [http-nio-9299-exec-7] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@1632049199 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('dcmdx',now())
+18:26:15.594 [http-nio-9299-exec-7] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:26:18.475 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+18:26:23.006 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+18:26:23.007 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+18:26:23.007 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Fill pool skipped, pool is at sufficient level.
+18:26:23.291 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+18:26:23.292 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+18:26:23.292 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Fill pool skipped, pool is at sufficient level.
+18:26:24.529 [http-nio-9299-exec-9] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@1088013628 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('y6rx7',now())
+18:26:24.538 [http-nio-9299-exec-9] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:26:25.274 [http-nio-9299-exec-10] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+18:26:25.274 [http-nio-9299-exec-4] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+18:26:25.274 [http-nio-9299-exec-6] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@586893415 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('p5fb4',now())
+ps : HikariProxyPreparedStatement@1005838522 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('fwhr5',now())
+18:26:25.283 [http-nio-9299-exec-10] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+ps : HikariProxyPreparedStatement@1426673354 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('egbr3',now())
+18:26:25.283 [http-nio-9299-exec-4] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:26:25.286 [http-nio-9299-exec-6] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:26:25.290 [springHikariCPAutoCommitTrue connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Added connection com.mysql.cj.jdbc.ConnectionImpl@336105ed
+18:26:28.512 [http-nio-9299-exec-8] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method validateCaptcha
+ps : HikariProxyPreparedStatement@1029801633 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: SELECT Captcha_Id,Captcha,Created_Date FROM t_captcha WHERE Captcha_Id=363921 AND Captcha='dcmdx'
+18:26:28.517 [http-nio-9299-exec-8] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method validateCaptcha
+18:26:34.401 [springHikariCPAutoCommitFalse connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - springHikariCPAutoCommitFalse - Closing connection com.mysql.cj.jdbc.ConnectionImpl@78946ce: (connection has passed maxLifetime)
+18:26:34.411 [springHikariCPAutoCommitFalse connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Added connection com.mysql.cj.jdbc.ConnectionImpl@f0e5d8f
+18:26:36.712 [springHikariCPAutoCommitFalse connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - springHikariCPAutoCommitFalse - Closing connection com.mysql.cj.jdbc.ConnectionImpl@46b44cf5: (connection has passed maxLifetime)
+18:26:36.722 [springHikariCPAutoCommitFalse connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Added connection com.mysql.cj.jdbc.ConnectionImpl@4e3357b4
+18:26:38.565 [http-nio-9299-exec-5] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+18:26:38.570 [http-nio-9299-exec-2] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@1871979949 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('2k4y5',now())
+18:26:38.575 [http-nio-9299-exec-5] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+ps : HikariProxyPreparedStatement@1979489523 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('fyddx',now())
+18:26:38.578 [http-nio-9299-exec-2] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:26:38.982 [http-nio-9299-exec-3] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@288041695 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('3kkbn',now())
+18:26:38.990 [http-nio-9299-exec-3] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:26:53.007 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+18:26:53.008 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+18:26:53.008 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Fill pool skipped, pool is at sufficient level.
+18:26:53.292 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Before cleanup stats (total=3, active=0, idle=3, waiting=0)
+18:26:53.292 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - After cleanup  stats (total=3, active=0, idle=3, waiting=0)
+18:26:53.292 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Fill pool skipped, pool is at sufficient level.
+18:27:04.103 [http-nio-9299-exec-1] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@1471485873 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('6eg6c',now())
+18:27:04.112 [http-nio-9299-exec-1] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:27:13.751 [http-nio-9299-exec-7] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@823904880 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('wncdn',now())
+18:27:13.761 [http-nio-9299-exec-7] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:27:20.138 [http-nio-9299-exec-9] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@372436780 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('g4cwb',now())
+18:27:20.148 [http-nio-9299-exec-9] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:27:21.070 [springHikariCPAutoCommitTrue connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - springHikariCPAutoCommitTrue - Closing connection com.mysql.cj.jdbc.ConnectionImpl@18e02e6f: (connection has passed maxLifetime)
+18:27:21.071 [springHikariCPAutoCommitTrue connection closer] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Fill pool skipped, pool is at sufficient level.
+18:27:23.008 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+18:27:23.009 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+18:27:23.009 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Fill pool skipped, pool is at sufficient level.
+18:27:23.293 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+18:27:23.293 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+18:27:23.293 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Fill pool skipped, pool is at sufficient level.
+18:27:24.345 [springHikariCPAutoCommitTrue connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - springHikariCPAutoCommitTrue - Closing connection com.mysql.cj.jdbc.ConnectionImpl@59dd2454: (connection has passed maxLifetime)
+18:27:24.354 [springHikariCPAutoCommitTrue connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Added connection com.mysql.cj.jdbc.ConnectionImpl@71460fec
+18:27:25.262 [http-nio-9299-exec-10] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@1437010686 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('pb8b6',now())
+18:27:25.271 [http-nio-9299-exec-10] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:27:30.698 [http-nio-9299-exec-6] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@1697689887 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('xgkdb',now())
+18:27:30.708 [http-nio-9299-exec-6] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:27:33.131 [http-nio-9299-exec-8] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@1885252827 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('46ygb',now())
+18:27:33.140 [http-nio-9299-exec-8] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:27:43.207 [http-nio-9299-exec-2] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@2137815494 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('fgenn',now())
+18:27:43.216 [http-nio-9299-exec-2] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:27:53.009 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+18:27:53.010 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+18:27:53.010 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Fill pool skipped, pool is at sufficient level.
+18:27:53.293 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+18:27:53.294 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+18:27:53.294 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Fill pool skipped, pool is at sufficient level.
+18:28:07.855 [http-nio-9299-exec-3] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@586556884 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('h23gh',now())
+18:28:07.864 [http-nio-9299-exec-3] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:28:23.010 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+18:28:23.011 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+18:28:23.011 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Fill pool skipped, pool is at sufficient level.
+18:28:23.294 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+18:28:23.294 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+18:28:23.294 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Fill pool skipped, pool is at sufficient level.
+18:28:24.644 [http-nio-9299-exec-1] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@653637396 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('w4rcx',now())
+18:28:24.653 [http-nio-9299-exec-1] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:28:25.259 [http-nio-9299-exec-7] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+18:28:25.259 [http-nio-9299-exec-9] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+18:28:25.262 [http-nio-9299-exec-10] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@640135730 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('pg72b',now())
+18:28:25.268 [http-nio-9299-exec-9] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+ps : HikariProxyPreparedStatement@2112326392 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('ewdh6',now())
+ps : HikariProxyPreparedStatement@2059078326 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('8c3xf',now())
+18:28:25.270 [http-nio-9299-exec-7] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:28:25.271 [http-nio-9299-exec-10] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:28:38.564 [http-nio-9299-exec-4] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+18:28:38.570 [http-nio-9299-exec-6] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@2135072953 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('88yxx',now())
+18:28:38.573 [http-nio-9299-exec-4] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+ps : HikariProxyPreparedStatement@957978911 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('ka8mm',now())
+18:28:38.578 [http-nio-9299-exec-6] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:28:38.985 [http-nio-9299-exec-8] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@1625449759 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('h5rkc',now())
+18:28:38.992 [http-nio-9299-exec-8] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:28:53.011 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+18:28:53.012 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+18:28:53.013 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Fill pool skipped, pool is at sufficient level.
+18:28:53.294 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+18:28:53.295 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+18:28:53.295 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Fill pool skipped, pool is at sufficient level.
+18:29:04.117 [http-nio-9299-exec-5] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@887161517 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('dwr2p',now())
+18:29:04.127 [http-nio-9299-exec-5] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:29:10.384 [http-nio-9299-exec-2] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@1661492088 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('pkrwy',now())
+18:29:10.393 [http-nio-9299-exec-2] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:29:13.757 [http-nio-9299-exec-3] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@263413633 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('4d5m3',now())
+18:29:13.766 [http-nio-9299-exec-3] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:29:20.130 [http-nio-9299-exec-1] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@1210610668 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('2acfy',now())
+18:29:20.138 [http-nio-9299-exec-1] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:29:22.887 [http-nio-9299-exec-9] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method validateCaptcha
+ps : HikariProxyPreparedStatement@373974361 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: SELECT Captcha_Id,Captcha,Created_Date FROM t_captcha WHERE Captcha_Id=363945 AND Captcha='pkrwy'
+18:29:22.891 [http-nio-9299-exec-9] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method validateCaptcha
+18:29:23.013 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+18:29:23.013 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+18:29:23.013 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Fill pool skipped, pool is at sufficient level.
+18:29:23.295 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+18:29:23.295 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+18:29:23.295 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Fill pool skipped, pool is at sufficient level.
+18:29:24.969 [springHikariCPAutoCommitTrue connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - springHikariCPAutoCommitTrue - Closing connection com.mysql.cj.jdbc.ConnectionImpl@336105ed: (connection has passed maxLifetime)
+18:29:24.978 [springHikariCPAutoCommitTrue connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Added connection com.mysql.cj.jdbc.ConnectionImpl@4df18236
+18:29:25.266 [http-nio-9299-exec-7] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@686036800 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('w3bnm',now())
+18:29:25.276 [http-nio-9299-exec-7] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:29:30.761 [springHikariCPAutoCommitFalse connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - springHikariCPAutoCommitFalse - Closing connection com.mysql.cj.jdbc.ConnectionImpl@f0e5d8f: (connection has passed maxLifetime)
+18:29:30.772 [springHikariCPAutoCommitFalse connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Added connection com.mysql.cj.jdbc.ConnectionImpl@5cf82739
+18:29:33.144 [http-nio-9299-exec-4] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@537881863 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('ade84',now())
+18:29:33.156 [http-nio-9299-exec-4] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:29:36.587 [springHikariCPAutoCommitFalse connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - springHikariCPAutoCommitFalse - Closing connection com.mysql.cj.jdbc.ConnectionImpl@4e3357b4: (connection has passed maxLifetime)
+18:29:36.597 [springHikariCPAutoCommitFalse connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Added connection com.mysql.cj.jdbc.ConnectionImpl@541bcfbb
+18:29:41.702 [http-nio-9299-exec-8] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@1061718168 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('cca6w',now())
+18:29:41.712 [http-nio-9299-exec-8] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:29:43.203 [http-nio-9299-exec-5] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@476048027 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('acgag',now())
+18:29:43.213 [http-nio-9299-exec-5] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:29:53.013 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+18:29:53.014 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+18:29:53.014 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Fill pool skipped, pool is at sufficient level.
+18:29:53.296 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+18:29:53.296 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+18:29:53.296 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Fill pool skipped, pool is at sufficient level.
+18:30:07.858 [http-nio-9299-exec-2] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@1071807420 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('g5c4c',now())
+18:30:07.868 [http-nio-9299-exec-2] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:30:19.976 [springHikariCPAutoCommitTrue connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - springHikariCPAutoCommitTrue - Closing connection com.mysql.cj.jdbc.ConnectionImpl@71460fec: (connection has passed maxLifetime)
+18:30:19.985 [springHikariCPAutoCommitTrue connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Added connection com.mysql.cj.jdbc.ConnectionImpl@33a68b96
+18:30:23.014 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+18:30:23.015 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+18:30:23.015 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Fill pool skipped, pool is at sufficient level.
+18:30:23.296 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+18:30:23.296 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+18:30:23.297 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Fill pool skipped, pool is at sufficient level.
+18:30:24.661 [http-nio-9299-exec-3] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@923384635 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('3fe5b',now())
+18:30:24.671 [http-nio-9299-exec-3] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:30:25.263 [http-nio-9299-exec-1] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+18:30:25.264 [http-nio-9299-exec-9] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@447257057 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('mmpb5',now())
+ps : HikariProxyPreparedStatement@1630076089 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('dhny5',now())
+18:30:25.271 [http-nio-9299-exec-1] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:30:25.272 [http-nio-9299-exec-9] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:30:25.273 [http-nio-9299-exec-7] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@2056348286 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('yy87x',now())
+18:30:25.282 [http-nio-9299-exec-7] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:30:38.562 [http-nio-9299-exec-4] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+18:30:38.562 [http-nio-9299-exec-10] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@1100811876 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('87bh6',now())
+ps : HikariProxyPreparedStatement@50383968 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('65ax6',now())
+18:30:38.572 [http-nio-9299-exec-4] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:30:38.573 [http-nio-9299-exec-10] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:30:38.976 [http-nio-9299-exec-6] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@1482493165 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('m6f4r',now())
+18:30:38.984 [http-nio-9299-exec-6] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:30:53.015 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+18:30:53.016 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+18:30:53.016 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Fill pool skipped, pool is at sufficient level.
+18:30:53.297 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+18:30:53.297 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+18:30:53.297 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Fill pool skipped, pool is at sufficient level.
+18:31:04.137 [http-nio-9299-exec-8] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@64727533 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('32dh6',now())
+18:31:04.151 [http-nio-9299-exec-8] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:31:13.768 [http-nio-9299-exec-5] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@814594403 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('3kenk',now())
+18:31:13.778 [http-nio-9299-exec-5] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:31:18.476 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+18:31:20.124 [http-nio-9299-exec-2] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@1641597135 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('db6yk',now())
+18:31:20.134 [http-nio-9299-exec-2] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:31:23.017 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+18:31:23.017 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+18:31:23.017 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Fill pool skipped, pool is at sufficient level.
+18:31:23.297 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+18:31:23.298 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+18:31:23.298 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Fill pool skipped, pool is at sufficient level.
+18:31:25.266 [http-nio-9299-exec-3] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@1262812707 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('mc2xf',now())
+18:31:25.274 [http-nio-9299-exec-3] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:31:33.146 [http-nio-9299-exec-9] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@344364855 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('pxr3n',now())
+18:31:33.154 [http-nio-9299-exec-9] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:31:41.703 [http-nio-9299-exec-4] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@1566901721 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('yfdyd',now())
+18:31:41.712 [http-nio-9299-exec-4] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:31:43.208 [http-nio-9299-exec-10] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@694741152 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('akne8',now())
+18:31:43.219 [http-nio-9299-exec-10] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:31:53.017 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+18:31:53.018 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+18:31:53.018 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Fill pool skipped, pool is at sufficient level.
+18:31:53.298 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+18:31:53.298 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+18:31:53.298 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Fill pool skipped, pool is at sufficient level.
+18:32:07.864 [http-nio-9299-exec-6] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@1343424755 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('erx3c',now())
+18:32:07.874 [http-nio-9299-exec-6] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:32:20.655 [springHikariCPAutoCommitTrue connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - springHikariCPAutoCommitTrue - Closing connection com.mysql.cj.jdbc.ConnectionImpl@4df18236: (connection has passed maxLifetime)
+18:32:20.664 [springHikariCPAutoCommitTrue connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Added connection com.mysql.cj.jdbc.ConnectionImpl@334bf87e
+18:32:23.018 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+18:32:23.019 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+18:32:23.019 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Fill pool skipped, pool is at sufficient level.
+18:32:23.299 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+18:32:23.299 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+18:32:23.299 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Fill pool skipped, pool is at sufficient level.
+18:32:24.703 [http-nio-9299-exec-8] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@1256509314 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('whf3p',now())
+18:32:24.713 [http-nio-9299-exec-8] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:32:25.273 [http-nio-9299-exec-5] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+18:32:25.273 [http-nio-9299-exec-3] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+18:32:25.274 [http-nio-9299-exec-2] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@1009487892 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('77574',now())
+ps : HikariProxyPreparedStatement@1569766894 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('rr7ya',now())
+18:32:25.283 [http-nio-9299-exec-3] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+ps : HikariProxyPreparedStatement@209289284 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('3xdfg',now())
+18:32:25.284 [http-nio-9299-exec-5] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:32:25.287 [http-nio-9299-exec-2] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:32:25.289 [springHikariCPAutoCommitTrue connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Added connection com.mysql.cj.jdbc.ConnectionImpl@5347b657
+18:32:30.331 [springHikariCPAutoCommitFalse connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - springHikariCPAutoCommitFalse - Closing connection com.mysql.cj.jdbc.ConnectionImpl@5cf82739: (connection has passed maxLifetime)
+18:32:30.343 [springHikariCPAutoCommitFalse connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Added connection com.mysql.cj.jdbc.ConnectionImpl@45b863df
+18:32:34.050 [springHikariCPAutoCommitFalse connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - springHikariCPAutoCommitFalse - Closing connection com.mysql.cj.jdbc.ConnectionImpl@541bcfbb: (connection has passed maxLifetime)
+18:32:34.059 [springHikariCPAutoCommitFalse connection adder] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Added connection com.mysql.cj.jdbc.ConnectionImpl@48569e4
+18:32:38.561 [http-nio-9299-exec-1] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+18:32:38.561 [http-nio-9299-exec-9] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@1807247975 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('b657m',now())
+ps : HikariProxyPreparedStatement@70236521 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('wdm5r',now())
+18:32:38.570 [http-nio-9299-exec-1] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:32:38.571 [http-nio-9299-exec-9] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:32:38.975 [http-nio-9299-exec-7] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@2134042706 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('yfhf4',now())
+18:32:38.984 [http-nio-9299-exec-7] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:32:53.019 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+18:32:53.020 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+18:32:53.020 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Fill pool skipped, pool is at sufficient level.
+18:32:53.299 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Before cleanup stats (total=3, active=0, idle=3, waiting=0)
+18:32:53.300 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - After cleanup  stats (total=3, active=0, idle=3, waiting=0)
+18:32:53.300 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Fill pool skipped, pool is at sufficient level.
+18:33:04.141 [http-nio-9299-exec-4] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@553417259 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('8bpef',now())
+18:33:04.150 [http-nio-9299-exec-4] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:33:13.766 [http-nio-9299-exec-10] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@1599647691 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('bfwxw',now())
+18:33:13.776 [http-nio-9299-exec-10] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:33:17.979 [springHikariCPAutoCommitTrue connection closer] DEBUG com.zaxxer.hikari.pool.PoolBase - springHikariCPAutoCommitTrue - Closing connection com.mysql.cj.jdbc.ConnectionImpl@33a68b96: (connection has passed maxLifetime)
+18:33:17.980 [springHikariCPAutoCommitTrue connection closer] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Fill pool skipped, pool is at sufficient level.
+18:33:20.138 [http-nio-9299-exec-6] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@483885826 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('6xwwa',now())
+18:33:20.148 [http-nio-9299-exec-6] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:33:23.020 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+18:33:23.020 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+18:33:23.020 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Fill pool skipped, pool is at sufficient level.
+18:33:23.088 [http-nio-9299-exec-8] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@903284256 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('f82bp',now())
+18:33:23.096 [http-nio-9299-exec-8] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:33:23.300 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+18:33:23.300 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+18:33:23.300 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Fill pool skipped, pool is at sufficient level.
+18:33:25.283 [http-nio-9299-exec-3] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@1323467023 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('gba22',now())
+18:33:25.292 [http-nio-9299-exec-3] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:33:33.140 [http-nio-9299-exec-2] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@349731522 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('dn5bh',now())
+18:33:33.148 [http-nio-9299-exec-2] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:33:41.706 [http-nio-9299-exec-9] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@201027790 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('cr28p',now())
+18:33:41.715 [http-nio-9299-exec-9] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:33:42.724 [http-nio-9299-exec-7] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method validateCaptcha
+ps : HikariProxyPreparedStatement@1050822978 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: SELECT Captcha_Id,Captcha,Created_Date FROM t_captcha WHERE Captcha_Id=363978 AND Captcha='f82bp'
+18:33:42.729 [http-nio-9299-exec-7] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method validateCaptcha
+18:33:43.206 [http-nio-9299-exec-4] INFO  c.r.a.s.i.AdministrationServiceImpl - Entry Method createCaptcha
+ps : HikariProxyPreparedStatement@1203694010 wrapping com.mysql.cj.jdbc.ClientPreparedStatement: INSERT INTO t_captcha(Captcha,Created_Date) VALUES ('kkhxg',now())
+18:33:43.215 [http-nio-9299-exec-4] INFO  c.r.a.s.i.AdministrationServiceImpl - Exit Method createCaptcha
+18:33:53.021 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+18:33:53.021 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+18:33:53.021 [springHikariCPAutoCommitFalse housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitFalse - Fill pool skipped, pool is at sufficient level.
+18:33:53.300 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Before cleanup stats (total=2, active=0, idle=2, waiting=0)
+18:33:53.301 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - After cleanup  stats (total=2, active=0, idle=2, waiting=0)
+18:33:53.301 [springHikariCPAutoCommitTrue housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - springHikariCPAutoCommitTrue - Fill pool skipped, pool is at sufficient level.
